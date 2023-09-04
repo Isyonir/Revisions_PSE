@@ -8,10 +8,12 @@ Le modèle sépare le flux de données en sept couches, de l'implémentation phy
 
 
 *tableau modèle OSI* 
-A
-P
-S
-T
-R
-L
-P
+| Couche           | Unité de protocole de données (PDU) |Protocoles TCP/IP|Fonction|
+|------------------|------------------|------------------|------------------|
+| Application      | Donnée     |
+| Présentation     | Donnée     |
+| Session          | Donnée     |
+| Transport        | Segment, Datagramme |
+| Réseau           | Paquet     |
+| Liaison          | Trame      |
+| Physique         | Bit        |
