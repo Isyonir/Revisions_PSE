@@ -46,12 +46,18 @@ Ce système garantit que chaque processus aura du temps d'exécution
 
 Dans le cas d'un ordinateur à plusieur coeurs, chaque coeur peut exécuter un processus.
 
+![Parallélisation](./images/parallélisation.png)
+
 La concurrence et la parallélisation peuvent être combinées.
 Dans ce cas, chaque coeur exécute de manière concurrente des processus.
+
+![Concurrence + parallélisation](./images/concurrence_parallelisation.png)
 
 ## Le parallélisme
 
 Les instructions d'un processus sont séparées et exécutées sur plusieurs coeurs en même temps.
+
+![Parallélisme](./images/parallellisme.png)
 
 ## Les threads
 
