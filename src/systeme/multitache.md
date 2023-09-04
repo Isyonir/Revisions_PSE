@@ -64,7 +64,7 @@ Les instructions d'un processus sont séparées et exécutées sur plusieurs coe
 Les threads sont des morceaux de processus qui sont exécutables indépendemment.
 Ce sont typiquement eux qui sont gérés par l'ordonnanceur (l'ordonnanceur ne gère pas un processus en entier, mais plutôt ses threads)
 
-Les threads d'un même processus partagent le tas (heap), et les instructions, mais ils ont chacun leut pile (stack)
+Les threads d'un même processus partagent le tas (heap), et les instructions, mais ils ont chacun leur pile (stack)
 
 Le context switch ente deux threads d'un même processus est bien plus léger que celui entre deux processus (certaines données sont communes aux threads d'un même processus)
 
