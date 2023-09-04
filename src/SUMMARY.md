@@ -9,6 +9,6 @@
 		- [Algorithmes d'ordonnancement](./systeme/algorithmes_d_ordonnancement.md)
   - [Réseau](./reseau/reseau.md)
   	- [Topologie des réseaux]
-   		- [Liens](./reseau/liens.md)
-     		- [Noeuds](./reseau/noeuds.md)
-       		- [Classification](./reseau/classification.md)
+		- [Liens](./reseau/liens.md)
+		- [Noeuds](./reseau/noeuds.md)
+		- [Classification](./reseau/classification.md)
