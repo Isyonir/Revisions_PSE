@@ -7,7 +7,4 @@
   			- [Multi-tâche schéma](./systeme/multitache_schema.md)
   - [Réseau](./reseau/reseau.md)
   	- [Topologie des réseaux](./reseau/topologie.md)
-		- [Liens](./reseau/lien.md)
-		- [Noeuds](./reseau/noeuds.md)
-		- [Classification](./reseau/classification.md)
    	- [Modèle OSI](./reseau/osi.md) 
