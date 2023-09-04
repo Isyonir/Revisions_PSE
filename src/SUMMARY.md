@@ -1,6 +1,5 @@
 # Sommaire
 
-[Préface](./Préface.md)
 - [Système](./systeme/systeme.md)
 	- [Processus](./systeme/processus.md)
 		- [Multi-tâche](./systeme/multitache.md)
