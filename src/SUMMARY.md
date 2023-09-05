@@ -9,3 +9,4 @@
     - [Généralités](./reseau/generalites.md)
     - [Modèle OSI](./reseau/osi.md)
     - [Couche 1 : Physique](./reseau/physique.md)
+    - [Couche 2 : Liaison](./reseau/liaison.md)
