@@ -2,6 +2,7 @@
 ### Principes 
 L'adresse MAC (Media Access Control) est l'adresse physique d'une carte réseau (Ethernet, wifi...) cette adresse est codée sur 6 octets en paire de deux chiffres hexadécimaux séparés par des deux-points.
 Les trois premiers octets de l'adresse correspondent à un constructeur, la deuxième partie de l'adresse correspond à la carte.
+
 | Adresse | Fabriquant |
 |---------|---------|
 |08:00:20:0a:15:db| Carte réseau Oracle Corporation|
@@ -11,6 +12,7 @@ Les trois premiers octets de l'adresse correspondent à un constructeur, la deux
 L'adresse MAC est normalement unique, mais ce n'est pas le cas, les constructeurs utilisent souvent des adresses déjà utilisées.
 
 Certaines adresses MAC sont réservées 
+
 | Adresse | Description |
 |---------|---------|
 |FF:FF:FF:FF:FF:FF |Adresse de broadcast Ethernet|
