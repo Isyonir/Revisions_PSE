@@ -11,7 +11,7 @@ Le modèle sépare le flux de données en sept couches, de l'implémentation phy
 
 Schéma : Wikipedia https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/OSI_Model_v1.svg/langfr-800px-OSI_Model_v1.svg.png
 
-## L'encapsulation : 
+### L'encapsulation : 
 Quand les données sont envoyées à la couche inférieure, chaque couche ajoute son entête/suffixe.
 Quand les données remontent à la couche supérieure, chaque couche doit supprimer son entête/suffixe.
 
