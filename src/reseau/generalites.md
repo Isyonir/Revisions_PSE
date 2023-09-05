@@ -47,3 +47,11 @@ Il éxiste un certains nombre de topologie basiques pour un réseau :
   - Half-duplex:Chaque station peut émettre, mais pas en même temps (Principe du Talkie-Walkie)
 
   - Full Duplex (ou simplement duplex):Chaque station peut émettre et recevoir en même temps.
+    
+### Les types de réseaux 
+  - LAN (Local Area Network) : Réseau local limité à un seul site géographique, dans une entreprise. Toutes les machines de ce réseau sont reliées directement via des commutateurs (switches).
+
+  - WAN (Wide Area Network) :Réseau grande distance, par opposition au LAN. Constitué de plusieurs LAN reliés entre eux par des routeurs. Exemples : Internet.
+
+  - MAN (Metropolitan Area Network) : Réseau de LANs reliés et distants de quelques kilomètres.
+Le but étant de relier les différents sites en très haut débit.
