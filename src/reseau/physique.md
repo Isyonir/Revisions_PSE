@@ -6,7 +6,7 @@ La couche physique correspond au support de transmission et les connecteur, le s
 - Une fibre optique
 - Des ondes (radio, wifi, bluetooth...)
 
-
+#### Le cuivre 
 Le câble de cuivre possède un nommage selon son blindage ou la forme de ses paires 
 Exemple : F/UTP
 F: Foil Shielded ,câble protégé avec un feuillard.
@@ -24,3 +24,6 @@ Les paires peuvent être :
   - Avec feuillard (F)
 
 La paire peut être torsadée (TP) ou non (rien).
+
+
+#### La fibre
