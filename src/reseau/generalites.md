@@ -1,6 +1,6 @@
 # Réseau
 
-## Topologie des réseaux
+## Notions générales sur le réseau
 
 ### Le lien 
 
@@ -31,3 +31,19 @@ Il éxiste un certains nombre de topologie basiques pour un réseau :
 - <b>Maille</b> : Chaque noeud est interconnecté partiellement ou totalement avec les autres noeuds du réseau.
 - <b>Arbre</b> : Collection de réseaux étoiles arrangés hiérarchiquement.
 - <b>Hybride</b> : Combine plusieurs topologies réseaux.
+
+### Les types de transmission
+
+  - Unicast : Transmission entre une machine et une seule autre.
+
+  - Broadcast : Transmission entre une machine et toutes les autres.
+
+  - Multicast : Transmission entre une machine et plusieurs autres
+
+### Les sens de transmission
+
+  - Simplex : Une station ne peut qu'émettre et l'autre que recevoir. (Quasiment inutilisé maintenant).
+
+  - Half-duplex:Chaque station peut émettre, mais pas en même temps (Principe du Talkie-Walkie)
+
+  - Full Duplex (ou simplement duplex):Chaque station peut émettre et recevoir en même temps.
