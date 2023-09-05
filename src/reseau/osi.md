@@ -16,3 +16,8 @@ Quand les données sont envoyées à la couche inférieure, chaque couche ajoute
 Quand les données remontent à la couche supérieure, chaque couche doit supprimer son entête/suffixe.
 
 ![Encapsulation](../images/encapsulation.png)
+
+### Le Modèle TCP-IP 
+Le modèle TCP-IP, adopté par Arpanet en 1983, est une simplification du modèle OSI.
+
+![TCP/IP](../images/tcp-ip.png)
