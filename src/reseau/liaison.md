@@ -19,3 +19,20 @@ Certaines adresses MAC sont réservées
 |33:33:xx:xx:xx:xx |Adresse de multicast IPv6    |
 |01:80:C2:00:00:00 |Adresse de « spanning tree » |
 |00:00:5E:00:01:xx |Protocole VRRP               |
+
+### La trame Ethernet
+![Trame Ethernet](../images/trame_ethernet.png)
+
+Champs de l'entête
+- Préambule : 7 octets à 10101010 pour synchroniser les stations
+- Start Frame delimiter (SFD) : 1 octet à 10101011 pour annoncer le début de la trame
+- @MAC destination : 6 octets
+- @MAC source : 6 octets
+- Type : 2 octets indiquant le protocole de niveau 3
+    - 0800 pour IPv4
+    - 86DD pour IPV6
+    - 0806 pour ARP
+- Données : padding avec des zéros si taille < 46 octets
+- Frame Check Sequence (FCS) : contient le CRC de la trame qui permet au destinataire d'en vérifier l'intégrité.
+
+### Les commutateurs
