@@ -3,7 +3,9 @@
 ## Synchronisation
 
 Le but de la synchronisation est d'empêcher que deux processus ou threads s'exécutant en parallèle ne puissent pas accéder à une même ressource critique en même temps.
-Cela permet d'éviter la modification/suppression de données lorsqu'un processus est en train de les utiliser.
+Cela permet d'éviter la modification/suppression de données lorsqu'un processus est en train de les utiliser, c'est le principe de data race.
+
+
 
 La synchronistion doit gérer les problématiques suivantes:
 
@@ -21,3 +23,5 @@ La synchronistion doit gérer les problématiques suivantes:
 | Verrou (lock ou mutex) | A chaque fois qu'un processus utilise la ressource, il acquiert ce qu'on appelle un verrou. Lorsque un processus veut accéder à la ressource, il vérifie si le verrou est libre, si ce n'est pas le cas, il attend. Une fois que le processus qui a la ressource a fini, il libère le verrou. | Simple à mettre en oeuvre (on a juste à créer une variable booléenne) | Peut mener à du deadlock si le processus oublie de libérer le verrou. Peut mener à une inversion de priorité. |
 | Sémaphore              | Mécanisme qui repose sur les signaux. Une sémaphore peut autoriser plus d'un processus à accéder à une ou plusieurs ressources.                                                                                   |                                                                       |                                                                                                               |
  
+Un autre challenge que la synchronisation doit aider à surmonter est la situation de compétition (race condition).
+Dans le cas où plusieurs threads d'un même processus s'exécutent en parallèle, l'ordre de complétion des threads n'est pas défini à l'avance.
