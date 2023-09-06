@@ -38,3 +38,14 @@ Champs de l'entête
 - Frame Check Sequence (FCS) : contient le CRC de la trame qui permet au destinataire d'en vérifier l'intégrité.
 
 ### Les commutateurs
+Les commutateurs permettent d'interconnecter des équipements dans un même réseau. 
+Il se charge de faire corrspondre l'adresse MAC de destination à un de ses ports.
+
+## Domaine de diffusion
+Domaine de diffusion : Espace logique d'un réseau informatique où n'importe quel ordinateur peut directement communiquer avec tous les autres du même domaine, sans devoir passer par un routeur.
+Il s’agit donc de l’ensemble des machines qui recevront une trame de broadcast envoyée par l’une d’entre elles.
+
+
+## VLAN
+Un VLAN ou Virtual Local Area Network est un réseau informatique logique indépendant, sur un switch les ports peuvent être taggués avec un numéro de VLAN.
+Si une machine est connecté sur un port taggué VLAN x(x étant un numéro), la machine ne pourra communiquer qu'avec les machines de son vlan
