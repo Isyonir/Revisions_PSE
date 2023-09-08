@@ -1,5 +1,5 @@
 # Couche 2 : Liaison
-### Principes 
+## Principes 
 L'adresse MAC (Media Access Control) est l'adresse physique d'une carte réseau (Ethernet, wifi...) cette adresse est codée sur 6 octets en paire de deux chiffres hexadécimaux séparés par des deux-points.
 Les trois premiers octets de l'adresse correspondent à un constructeur, la deuxième partie de l'adresse correspond à la carte.
 
@@ -22,7 +22,7 @@ Certaines adresses MAC sont réservées
 |01:80:C2:00:00:00 |Adresse de « spanning tree » |
 |00:00:5E:00:01:xx |Protocole VRRP               |
 
-### La trame Ethernet
+## La trame Ethernet
 ![Trame Ethernet](../images/trame_ethernet.png)
 
 Champs de l'entête
@@ -37,7 +37,7 @@ Champs de l'entête
 - Données : padding avec des zéros si taille < 46 octets
 - Frame Check Sequence (FCS) : contient le CRC de la trame qui permet au destinataire d'en vérifier l'intégrité.
 
-### Les commutateurs
+## Les commutateurs
 Les commutateurs permettent d'interconnecter des équipements dans un même réseau. 
 Il se charge de faire corrspondre l'adresse MAC de destination à un de ses ports.
 
@@ -48,4 +48,11 @@ Il s’agit donc de l’ensemble des machines qui recevront une trame de broadca
 
 ## VLAN
 Un VLAN ou Virtual Local Area Network est un réseau informatique logique indépendant, sur un switch les ports peuvent être taggués avec un numéro de VLAN.
-Si une machine est connecté sur un port taggué VLAN x(x étant un numéro), la machine ne pourra communiquer qu'avec les machines de son vlan
+Si une machine est connecté sur un port taggué VLAN x(x étant un numéro), la machine ne pourra communiquer qu'avec les machines de son vlan.
+Le routeur se charge du trafic entre les VLAN.
+
+### Liaison TRUNK
+Le TRUNK est une liaison unique permettant de faire passer plusieurs VLAN sur un même lien. Il se situe entre deux switchs, ou un switch et un routeur.
+Pour fonctionner, le switch réencapsule la trame ethernet avec un tag VLAN. Le destinataire de la trame, un autre switch Dé-encapsule la trame en enlevant le tag Vlan. 
+
+
