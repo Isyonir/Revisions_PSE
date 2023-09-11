@@ -2,10 +2,11 @@
 
 ## Synchronisation
 
-Le but de la synchronisation est d'empêcher que deux processus ou threads s'exécutant en parallèle ne puissent pas accéder à une même ressource critique en même temps.
-Cela permet d'éviter la modification/suppression de données lorsqu'un processus est en train de les utiliser, c'est le principe de data race.
+### Data Race
 
-
+Une Data Race survient quand une donnée partagée est accédée par au moins deux threads dont au moins un en écriture et ce, sans synchronisation.
+Dans ce cas, il peut y avoir modification de la donnée par un des deux processus alors qu'elle est déjà utilisée par un autre.
+Une des conséquences peut être le mauvais fonctionnement du programme (bugs) 
 
 La synchronistion doit gérer les problématiques suivantes:
 
@@ -23,5 +24,15 @@ La synchronistion doit gérer les problématiques suivantes:
 | Verrou (lock ou mutex) | A chaque fois qu'un processus utilise la ressource, il acquiert ce qu'on appelle un verrou. Lorsque un processus veut accéder à la ressource, il vérifie si le verrou est libre, si ce n'est pas le cas, il attend. Une fois que le processus qui a la ressource a fini, il libère le verrou. | Simple à mettre en oeuvre (on a juste à créer une variable booléenne) | Peut mener à du deadlock si le processus oublie de libérer le verrou. Peut mener à une inversion de priorité. |
 | Sémaphore              | Mécanisme qui repose sur les signaux. Une sémaphore peut autoriser plus d'un processus à accéder à une ou plusieurs ressources.                                                                                   |                                                                       |                                                                                                               |
  
+ 
+### Race condition
+
 Un autre challenge que la synchronisation doit aider à surmonter est la situation de compétition (race condition).
 Dans le cas où plusieurs threads d'un même processus s'exécutent en parallèle, l'ordre de complétion des threads n'est pas défini à l'avance.
+Cela peut conduire à un comportement erroné du programme (Le thread B s'exécute avant le thread A alors qu'il avait besoin de lui pour faire quelquechose vant son exécution)
+
+Une des manières pour remédier aux race condition sont les barrières:
+
+Une barrière est définie pour un groupe de threads. Chaque thread de ce groupe doit attendre à la barrière le temps que les autres threads du groupe y soient aussi avant de pouvoir continuer.
+Il peut y avaoir plusieurs barrières les unes à la suite des autres.
+L'inconvénient majeur est le ralentissement de l'exécution du programme, à chaque fois les threads doivent s'attendre entre eux avant de pouvoir continuer leur exécution.
