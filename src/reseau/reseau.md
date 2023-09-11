@@ -189,21 +189,30 @@ Quelques exemples :
 Le CIDR introduit la notion de subnetting et de suppernetting.
 
 ### Le subnetting 
+
 Le subnetting consite à couper un réseau en plusieurs sous-réseaux. Le découpage se fait toujours de manière égale.
-<table>
+<table style="text-align:center;">
   <tr>
-    <td style="width:100%">172.16.0.0/16</td>
+    <td colspan="8">172.16.0.0/16</td>
   </tr>
   <tr>
-    <td>172.16.0.0/17</td>
-    <td>172.168.128.0/17</td>
+    <td colspan="4">172.16.0.0/17</td>
+    <td colspan="4">172.168.128.0/17</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="4">172.16.0.0/17</td>
+    <td colspan="2">172.16.128.0/18</td>
+    <td colspan="2">172.16.192.0/18</td>
   </tr>
+  <tr>
+    <td colspan="4">172.16.0.0/17</td>
+    <td colspan="1">172.16.128.0/19</td>
+    <td colspan="1">172.16.160.0/19</td>
+    <td colspan="2">172.16.192.0/18</td>
+  </tr>  
 </table>
+
+
 ## ARP et ICMP
 
 ## Fragmentation
