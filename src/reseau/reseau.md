@@ -196,16 +196,16 @@ Le subnetting consite à couper un réseau en plusieurs sous-réseaux. Le décou
     <td colspan="8">172.16.0.0/16</td>
   </tr>
   <tr>
-    <td colspan="4">172.16.0.0/17</td>
-    <td colspan="4">172.168.128.0/17</td>
+    <td colspan="4" style="width:50%">172.16.0.0/17</td>
+    <td colspan="4" style="width:50%">172.168.128.0/17</td>
   </tr>
   <tr>
-    <td colspan="4">172.16.0.0/17</td>
+    <td colspan="4" style="width:50%">172.16.0.0/17</td>
     <td colspan="2">172.16.128.0/18</td>
     <td colspan="2">172.16.192.0/18</td>
   </tr>
   <tr>
-    <td colspan="4">172.16.0.0/17</td>
+    <td colspan="4" style="width:50%">172.16.0.0/17</td>
     <td colspan="1">172.16.128.0/19</td>
     <td colspan="1">172.16.160.0/19</td>
     <td colspan="2">172.16.192.0/18</td>
