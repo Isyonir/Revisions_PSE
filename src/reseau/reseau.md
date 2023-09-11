@@ -231,7 +231,7 @@ Utilisé par les FAI pour simplifier leur tables de routage, on fusionne des ré
 </table>
 ## Le paquet IP
 
-Schéma paquet IP :
+.[Entête IP](../images/entete_ip.png)
 
 Champs de l'entête
 - Version : 4 bits indiquant la version (4)
@@ -244,6 +244,17 @@ Champs de l'entête
 - Fragment offset : 13 bits indiquant la position du fragment en nombre de mots de 8 octets
 - TTL : 8 bits indiquant la durée de vie d'un paquet
 - Protocole : 8 bits indiquant le protocole de la couche supérieure (TCP, UDP, ICMP)
+- Somme de contrôle : 16 bits, calculée à partir de l'entête
+- @ source : 32 bits
+- @ destination : 32 bits
+- Options :
+  - Security
+  - Record route
+  - Timestamp
+  - Traceroute
+  - ...
+- Bourrage : Entre 0 et 7 bits à 0 pour obtenir une entête multiple de 32 bits
+
 
 ## ARP et ICMP
 
