@@ -4,11 +4,10 @@
 
 Un processus est l'instance d'un programme qui est exécuté par un ou plusieurs threads (fils d'execution)
 
-Il ne faut pas confondre un programme qui est le fichier présent sur le disque dur qui contient les instructions d'execution et le processus qui est une instance en mémoire de ce programme.
+Il ne faut pas confondre un programme qui est le fichier présent sur le disque dur et qui contient les instructions d'execution et le processus qui est une instance en mémoire de ce programme.
 
 Il peut s'exécuter soit en mode "kernel" (privilégié) et dans ce cas il a accès aux instructions privilégiées qui permettent notemment l'accès direct au matériel, soit en mode "user" dans ce cas, le processus est limité, et ne peut exécuter que ses propres instructions et il n'a pas accès direct au matériel.
-Un processus exécuté en mode "user" peut passer en mode "kernel" pour exécuter certaines instructions
-
+Un processus exécuté en mode "user" peut passer en mode "kernel" pour exécuter certaines instructions.
 
 La plage mémoire allouée pour chaque processus par l'OS est découpé en plusieurs parties. Leur nombre et leur arrangement peut dépendre de l'OS (Windows, Linux).
 
@@ -32,5 +31,5 @@ Les processus possèdent ce que l'on appelle des "états".
  
 ![Etats processus](../images/processus_etats.png)
 
-Un processus zombie est un processus troujours présent en mémoire mais qu ne s'exécute plus.
+Un processus zombie est un processus toujours présent en mémoire mais qu ne s'exécute plus.
 L'accumulation de processus zombies peut entraîner une pénurie de RAM, et donc un crash ou un ralentissement du système.
