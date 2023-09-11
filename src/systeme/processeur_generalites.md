@@ -44,8 +44,9 @@ Pour rappel, une adresse mémoire se compose de deux parties:
 Ainsi, pour avoir l'adresse mémoire du sommet du stack, il faut combiner le SS et le SP, ce qui donne : SS:SP
 (Plus d'infos sur la gestion de la mémoire dans le chapitre dédié)
 
-| CS | Code Segment  | Utilisé pour se référer à des segments dans la partie mémoire "Text" du processus                   |
+|Nom | Nom complet   | Description                                                                                         |
 |----|---------------|-----------------------------------------------------------------------------------------------------|
+| CS | Code Segment  | Utilisé pour se référer à des segments dans la partie mémoire "Text" du processus                   |
 | DS | Data Segment  | Utilisé pour se référer à des segments dans la partie mémoire "Data", "Heap", ou "BSS" du processus |
 | ES | Extra segment | Peut être utilisé pour se référer au segment de n'importe quelle donnée                             |
 | SS | Stack Segment | Utilisé pour se référer aux segments dans la partie mémoire "Stack" du processus                    |
@@ -61,12 +62,10 @@ Ils ont une taille de 1 bit (vrai ou faux)
 
 Quelques flags :
 
-| CF | Carry flag    | Indicateur de retenue (1 si une retenue, sinon 0)                                                              |
+|Nom | Nom complet   | Description                                                                                                    |
 |----|---------------|----------------------------------------------------------------------------------------------------------------|
+| CF | Carry flag    | Indicateur de retenue (1 si une retenue, sinon 0)                                                              |
 | PF | Parity flag   | Indique si le résultat est pair (1 = pair 0 = impair)                                                          |
 | ZF | Zero flag     | Indique si le résultat est égal à 0 (1 = vrai 0 = faux)                                                        |
 | SF | Sign flag     | Indique si le résultat d'une opération sur des nombres signés est positif ou négatif (1 = négatif 0 = positif) |
-| OF | Overflow flag | Indique si un débordement s'est produit                                                                        |
-
-## 
 
