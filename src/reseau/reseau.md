@@ -282,7 +282,71 @@ Le Maximum Transmission Unit (MTU) est une valeur maximum de la taille d'un paqu
 Dans ces cas là, le MTU est une limitation physique, il est impossible de l'augmenter.
 Le MTU sert de base pour la négociation du Maximum Segment Size (MSS) dans l'établissement d'une connexion TCP.
 
+Pour passer ces limites, les paquets IP plus grand que le MTU sont divisés en plusieurs segments, c'est la fragmentation.
+Chaque fragment possède un entête avec deux informations:
+  - Son emplacement dans le paquet -> Fragment Offset
+  - S'il est le dernier fragment -> More Fragment (1 si oui, 0 si non)
 
+Exemple avec le paquet suivant : 
+<table>
+  <tr>
+    <td>Identification</td>
+    <td>Longueur</td>
+    <td>DF (Don't fragment)</td>
+    <td>MF (More fragment)</td>
+    <td>Fragment Offset</td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td>5140</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+</table>
+
+On obtient les fragments suivants :
+<table>
+  <tr>
+    <td>Identification</td>
+    <td>Longueur</td>
+    <td>DF (Don't fragment)</td>
+    <td>MF (More fragment)</td>
+    <td>Fragment Offset</td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>1</td>
+    <td>185</td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>1</td>
+    <td>370</td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td>700</td>
+    <td>0</td>
+    <td>0</td>
+    <td>555</td>
+  </tr>
+</table>
+
+Attention, L'offset est calculé en mot de 8 bits ! 
+Attention, un fragment possède une entête de 20, donc il n'y a que 1480 octets du paquet d'origines.
+Dans l'exemple en haut on a 1480+1480+1480+700 = 5140
 ## Routage et NAT
 
 ## Principes IP v6
