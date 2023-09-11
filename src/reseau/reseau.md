@@ -175,16 +175,16 @@ Elles sont donc unique localement (LAN ou WAN interne) mais à un niveau mondial
 Le CIDR (Classless Inter-Domain Routing) remplace le mécanisme des classes 
 Sa notation se fait en comptant le nombre de bits à 1 du masque 
 Exemple : 
-En décimal : 255.255.255.0
-En binaire : 1111 1111.1111 1111.1111 1111.0
-En CIDR    : /24
+- En décimal : 255.255.255.0
+- En binaire : 1111 1111.1111 1111.1111 1111.0
+- En CIDR    : /24
 
 Le CIDR permet d'utiliser des masques hors classe pour plus de granularité. (Variable Lenght Subnet Mask VLSM)
 Quelques exemples : 
-/17 : 32766 hôte,
-/22 : 1022 hotes
-/30 : 2 hôtes
-/32 : 1 hôte
+- /17 : 32766 hôte,
+- /22 : 1022 hotes
+- /30 : 2 hôtes
+- /32 : 1 hôte
 
 Le CIDR introduit la notion de subnetting et de suppernetting.
 
