@@ -73,8 +73,8 @@ Les classes d'adresses :
     <td></td>
   </tr>
   <tr>
-    <td>E Réservée IANA</td>
-    <td1111</td>
+    <td>E : Réservée IANA</td>
+    <td>1111</td>
     <td>240.0.0.0</td>
     <td>255.255.255.255</td>
     <td></td>
