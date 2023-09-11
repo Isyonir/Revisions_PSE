@@ -1,5 +1,5 @@
 # Couche 1 : Réseau
-### Principe IP v4 et masques de sous-réseaux
+## Principe IP v4 et masques de sous-réseaux
 L'adresse IP est composée de 4 octets de 8 bits (0-255) soit 32 bits. Il existe 4 294 967 296 adresses maximum. 
 L'adresse IP est associée à un masque, elle permet de couper l'adresse en deux partie un NetID et un HostID
 
@@ -83,7 +83,7 @@ Les classes d'adresses :
   </tr>
 </table>
 
-### Adresses réservées
+## Adresses réservées
 Type d'adresses
 - Adresses réservées
 Adresses particulières, réservées au fonctionnement du réseau.
@@ -171,12 +171,43 @@ Elles sont donc unique localement (LAN ou WAN interne) mais à un niveau mondial
   </tr>
 </table>
 
-### CIDR et subnetting
+## CIDR et subnetting
+Le CIDR (Classless Inter-Domain Routing) remplace le mécanisme des classes 
+Sa notation se fait en comptant le nombre de bits à 1 du masque 
+Exemple : 
+En décimal : 255.255.255.0
+En binaire : 1111 1111.1111 1111.1111 1111.0
+En CIDR    : /24
 
-### ARP et ICMP
+Le CIDR permet d'utiliser des masques hors classe pour plus de granularité. (Variable Lenght Subnet Mask VLSM)
+Quelques exemples : 
+/17 : 32766 hôte,
+/22 : 1022 hotes
+/30 : 2 hôtes
+/32 : 1 hôte
 
-### Fragmentatio
+Le CIDR introduit la notion de subnetting et de suppernetting.
 
-### Routage et NAT
+### Le subnetting 
+Le subnetting consite à couper un réseau en plusieurs sous-réseaux. Le découpage se fait toujours de manière égale.
+<table>
+  <tr>
+    <td style="width:100%">172.16.0.0/16</td>
+  </tr>
+  <tr>
+    <td>172.16.0.0/17</td>
+    <td>172.168.128.0/17</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+## ARP et ICMP
 
-### Principes IP v6
+## Fragmentation
+
+## Routage et NAT
+
+## Principes IP v6
