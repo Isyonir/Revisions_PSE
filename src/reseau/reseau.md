@@ -1,5 +1,6 @@
 # Couche 1 : Réseau
 ## Principe IP v4 et masques de sous-réseaux
+
 L'adresse IP est composée de 4 octets de 8 bits (0-255) soit 32 bits. Il existe 4 294 967 296 adresses maximum. 
 L'adresse IP est associée à un masque, elle permet de couper l'adresse en deux partie un NetID et un HostID
 
@@ -84,6 +85,7 @@ Les classes d'adresses :
 </table>
 
 ## Adresses réservées
+
 Type d'adresses
 - Adresses réservées
 Adresses particulières, réservées au fonctionnement du réseau.
@@ -172,6 +174,7 @@ Elles sont donc unique localement (LAN ou WAN interne) mais à un niveau mondial
 </table>
 
 ## CIDR et subnetting
+
 Le CIDR (Classless Inter-Domain Routing) remplace le mécanisme des classes 
 Sa notation se fait en comptant le nombre de bits à 1 du masque 
 Exemple : 
@@ -213,6 +216,7 @@ Le subnetting consite à couper un réseau en plusieurs sous-réseaux. Le décou
 </table>
 
 ### Le supernetting
+
 Utilisé par les FAI pour simplifier leur tables de routage, on fusionne des réseaux dans avec un masque plus petit.
 <table style="width:100%;text-align:center;"> 
 <tr>
@@ -258,7 +262,26 @@ Champs de l'entête
 
 ## ARP et ICMP
 
-## Fragmentation
+L'Adresse Resolution Protocol (ARP) permet à un équipement de récupérer l'adresse MAC d'une machine dont l'adresse IP est connue sur le même réseau local.
+- 1: L'émetteur vérifie son cache ARP. S'il connait déjà l'adresse mac ET que l'entrée dans la table n'est pas périmée. Il renvoie l'adresse MAC à la couche IP
+- 2: Sinon l'émtteur envoie une requète ARP en broadcast sur le réseau local pour demander qui possède l'adresse IP.
+- 3: Le périphérique réseau qui reconnait son adresse IP réponds en envoyeant la réponse ARP avec son adresse MAC. Il met à jour sa table ARP avec l'adresse IP et MAC de l'émetteur.
+- 4: L'émetteur reçoit la réponse, met à jour sa table ARP avec l'adresse IP et MAC puis renvoie l'adresse MAC à la couche IP.
+
+L'ICMP est un protocole que les périphériques d'un réseau utilisent pour communiquer sur les problèmes de transmission des données.
+Exemple : la requête ping.
+
+## MTU et Fragmentation
+
+Le Maximum Transmission Unit (MTU) est une valeur maximum de la taille d'un paquet IP. Il diffère en fonction du médium utilisé:
+  - Ethernet normal : 1500 octets,
+  - Ethernet jumbo:   jusqu'à 9000 octets,
+  - PPPoE :           1492 octets,
+  - ADSL :            1468 octets.
+
+Dans ces cas là, le MTU est une limitation physique, il est impossible de l'augmenter.
+Le MTU sert de base pour la négociation du Maximum Segment Size (MSS) dans l'établissement d'une connexion TCP.
+
 
 ## Routage et NAT
 
