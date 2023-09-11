@@ -92,6 +92,7 @@ Adresses non routables, utilisables uniquement sur le réseau local. Uniques sur
 - Adresses publiques
 Toutes les adresses qui ne sont ni réservées ni privées. Adresses routables et uniques sur Internet Fournies par le Fournisseur d'Accès Internet (FAI)
 
+Adresses réservées
 <table>
   <tr>
     <th>Adresse</th>
@@ -141,6 +142,32 @@ Toutes les adresses qui ne sont ni réservées ni privées. Adresses routables e
     <td>100.127.255.255</td>
     <td>/10</td>
     <td>255.192.0.0</td>
+  </tr>
+</table>
+
+Pour chaque classes(A,B et C) des adresses sont dites privées, elles sont utilisées pour un usage interne et privé. Ces adresses ne sont donc pas routables sur internet.
+Elles sont donc unique localement (LAN ou WAN interne) mais à un niveau mondial plusieurs périphériques peuvent avoir la même adresse locale.
+
+<table>
+  <tr>
+    <th>Classe</th>
+    <th>Début</th>
+    <th>Fin</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>10.0.0.0</td>
+    <td>10.255.255.255</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>172.16.0.0</td>
+    <td>172.31.255.255</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>192.168.0.0</td>
+    <td>192.168.255.255</td>
   </tr>
 </table>
 
