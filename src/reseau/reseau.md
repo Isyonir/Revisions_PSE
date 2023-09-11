@@ -12,8 +12,11 @@ HostId :       1
 En notation CIDR 255.255.255.0 -> /24 (24 bits à "1")
 L'association adresse/masque donne plusieurs informations importantes comme le nombre de machines adressables. 
 Plus le masque est grand moins on à d'adresses.
+
 L'adresse réseau est l'identifiant du réseau, on l'obtient quand tous les bits du HostId sont à 0
+
 L'adresse de broadcast, utilisée pour communiquer à tous les membres du réseau s'obtient quand tous les bits du HostID sont à 1.
+
 Exemple :
 Adresse IP :   192.168.0.1
 Masque :       255.255.255.0
