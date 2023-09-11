@@ -16,19 +16,19 @@ Pour cela, il suffit de faire correspondre une plage d'adresse virtuelle à une 
 Un autre intérêt est que la mémoire virtuelle permet d'implémenter tout ce qui est en rapport avec la sécurité d'accès à la mémoire.
 Avant l'utilisation de la mémoire virtuelle, tous les processus qui tournaient sur une machine pouvaient avoir accès à toutes les adresses mémoires physiques de la machine, ce qui représentait un risque de sécurité et de stabilité.
 
-![Image mémoire virtuelle](./images/memoire_virtuelle.jpg)
+![Image mémoire virtuelle](../images/memoire_virtuelle.jpg)
 
 La mémoire virtuelle peut être implémentée de deux façons:
 
 ### Pagination mémoire
 
-La mémoire physique est découpée en "frames" de même taille, tandis que la mémoire virtuelle est découpée en "pages" de la même taille que les "frames".
+La mémoire physique est découpée en "frames" de même taille arbitraire, tandis que la mémoire virtuelle est découpée en "pages" de la même taille que les "frames".
 Le MMU associe les pages de mémoires virtuelles aux frames de mémoire physique dans une table des pages.
 
 Pour avoir l'adresse physique d'une donnée dans une page, on a besoin du couple: 
 Numéro de frame + Offset (déplacement)
 
-![Image pagination](./images/pagination.jpeg)
+![Image pagination](../images/pagination.jpeg)
 
 
 ### Segmentation mémoire
@@ -39,13 +39,15 @@ A la différence de la pagination, où la taille des frames et des pages est d'u
 Pour avoir l'adresse physique d'une donnée, on a besoin du couple:
 Numéro de segment + Offset (déplacement)
 
+![Image segmentation](../images/processus_memoire.png)
+
 En pratique, les techniques de pagination et de segmentation sont utilisées de façon conjointe.
 
 ### La Pagination segmentée
 
 Le programme est découpé en segments. Chaque segment contient une table de pages, et chaque page dans ces tables contient l'adresse d'une frame.
 
-![Image pagination segmentee](./images/pagination_segmentee.png)
+![Image pagination segmentee](../images/pagination_segmentee.png)
 
 
 
