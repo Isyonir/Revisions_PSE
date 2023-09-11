@@ -191,7 +191,7 @@ Le CIDR introduit la notion de subnetting et de suppernetting.
 ### Le subnetting 
 
 Le subnetting consite à couper un réseau en plusieurs sous-réseaux. Le découpage se fait toujours de manière égale.
-<table style="text-align:center;">
+<table style="width:100%;text-align:center;">
   <tr>
     <td colspan="8">172.16.0.0/16</td>
   </tr>
