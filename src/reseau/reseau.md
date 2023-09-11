@@ -4,10 +4,10 @@ L'adresse IP est composée de 4 octets de 8 bits (0-255) soit 32 bits. Il existe
 L'adresse IP est associée à un masque, elle permet de couper l'adresse en deux partie un NetID et un HostID
 
 Exemple : 
-Adresse IP :   192.168.0.1
-Masque :       255.255.255.0
-NetId  :       192.168.0
-HostId :       1
+- Adresse IP :   192.168.0.1
+- Masque :       255.255.255.0
+- NetId  :       192.168.0
+- HostId :       1
 
 En notation CIDR 255.255.255.0 -> /24 (24 bits à "1")
 L'association adresse/masque donne plusieurs informations importantes comme le nombre de machines adressables. 
@@ -18,10 +18,10 @@ L'adresse réseau est l'identifiant du réseau, on l'obtient quand tous les bits
 L'adresse de broadcast, utilisée pour communiquer à tous les membres du réseau s'obtient quand tous les bits du HostID sont à 1.
 
 Exemple :
-Adresse IP :   192.168.0.1
-Masque :       255.255.255.0
-@ Réseau:      192.168.0.0
-@ Broadcast:   192.168.0.255
+- Adresse IP :   192.168.0.1
+- Masque :       255.255.255.0
+- @ Réseau:      192.168.0.0
+- @ Broadcast:   192.168.0.255
 
 Le nombre de machines adressables est égal à 2^8 -2 = 254 
 
