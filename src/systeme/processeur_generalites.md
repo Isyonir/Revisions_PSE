@@ -38,7 +38,7 @@ Leur nom dépend de leur taille:
 
 ### Les registres de segment
 Ces registres sont principalement utilisés pour contenir des adresses de segment.
-Pour rappel, une adresse mémoire se compose de deux parties:
+Pour rappel dans le cas d'une mémoire segmentée, une adresse mémoire se compose de deux parties:
 - Le segment
 - L'offset (décalage)
 Ainsi, pour avoir l'adresse mémoire du sommet du stack, il faut combiner le SS et le SP, ce qui donne : SS:SP
