@@ -233,9 +233,10 @@ Utilisé par les FAI pour simplifier leur tables de routage, on fusionne des ré
     <td colspan="4">172.16.0.0/15</td>
   </tr>
 </table>
+
 ## Le paquet IP
 
-.[Entête IP](../images/entete_ip.png)
+![Entête IP](../images/entete_ip.png)
 
 Champs de l'entête
 - Version : 4 bits indiquant la version (4)
@@ -345,8 +346,90 @@ On obtient les fragments suivants :
 </table>
 
 Attention, L'offset est calculé en mot de 8 bits ! 
+
 Attention, un fragment possède une entête de 20, donc il n'y a que 1480 octets du paquet d'origines.
 Dans l'exemple en haut on a 1480+1480+1480+700 = 5140
+
 ## Routage et NAT
+- Il s'agit du mécanisme qui permet de déterminer le chemin que doivent suivre les paquets pour arriver à destination, un équipement assurant la fonction de routage prend en charge le réacheminement des paquets qui ne lui sont pas destinés.
+- Le routage se fait pas à pas (hop by hop). C'est à dire que le routeur détermine à quel voisin transmettre le paquet grâce à sa table de routage.
+- La gestion du flux et des erreurs est repoussée aux extrémitées grâce au protocole TCP.
+- Une machine ordinaire (linux ou windows) peut être un routeur.
+  
+### Table de routage
+Chaque machine contient une table de routage, elle indique ce qu'il faut faire de chaque paquet en fonction de l'adresse destinataire: 
+<table>
+  <tr>
+    <th>Réseau</th>
+    <th>Masque</th>
+    <th>Passerelle</th>
+    <th>Interface</th>
+  </tr>
+  <tr>
+    <td>0.0.0.0</td>
+    <td>0.0.0.0</td>
+    <td>10.189.250.249</td>
+    <td>ens0p0</td>
+  </tr>
+  <tr>
+    <td>10.189.250.0</td>
+    <td>255.255.255.0</td>
+    <td>-</td>
+    <td>ens0p0</td>
+  </tr>
+  <tr>
+    <td>127.0.0.0</td>
+    <td>255.0.0.0</td>
+    <td>-</td>
+    <td>lo</td>
+  </tr>
+</table>
+
+L'utilisation de cette table se fait du masque le plus long (ici : 255.255.255.0) au masque le plus petit (ici : 0.0.0.0)
+Pour chaque ligne, Il faut effectuer un ET logique entre
+l'adresse destinataire et le masque.
+
+Si le résultat est égal à l'adresse réseau, la ligne doit être utilisée :
+- soit en envoyant le paquet à la passerelle si elle est présente.
+- soit directement sur l'interface.
+
+### NAT
+Du fait du manque d'adresse IP V4 publiques, la translation d'adresses a été mis en place.
+
+En NAT statique, le routeur remplace l'adresse IP de la machine par une adresse publique donnée par le FAI.
+En NAT dynamique, on utilise le numéro de port TCP ou UDP pour partager une seule adresse IP publique entre plusieurs machines qui possèdent des IP différentes 
+
+#### Nat Sortant (SNAT)
+Le NAT sortant change uniquement l'adresse IP du périphérique local avec l'IP publique attribuée par le FAI.
+Le problème est que si deux périphériques utilisent le même port, le routeur ne saura pas vers qui renvoyer le paquet.
+
+#### NAT/PAT (Network Adress Translation/ Port Adress Translation)
+Avec le NAT/PAT il y a une translation d'adresse (@ IP privée-> @ IP publique) mais aussi une translation de port au niveau du routeur.
+Quand le paquet arrive au routeur, il change le port et l'enregistre dans une table. Ainsi le routeur sait exactement à qui envoyer le paquet retour.
+
+#### NAT entrant (DNAT) ou Redirection de port (Port forwarding)
+Dans le cas ou une machine souhaite se connecter sur un serveur, elle connait uniquement l'adresse IP publique et le numéro de port et non l'ip et le port du serveur. 
+Au niveau du routeur une règle est faite pour transférer les paquets avec un port précis vers une machine locale précise.
 
 ## Principes IP v6
+
+Une adresse IP V6 est composée de 16 octets, soit un total de 128 bits.
+Elle est coupée en 8 blocs de 4 chiffres hexadécimaux.
+En IP V6 :
+- Pas de NAT, une adresse unique par machine
+- Pas de broadcast, remplacé par du multicast
+- Pas d'ARP, il est remplacé par la découverte de voisins
+- Configuration automatique
+- Simplification des entêtes
+- QOS intégrée
+
+  L'adresse est découpée en deux partie
+  - Un HostID de 64 bits
+  - Un NetID de 64 bits
+
+En mode autoconfiguration, l'hostID correspond à l'adresse MAC du périphérique, celle-ci est coupée à son milieu et la sequence hexadécimale FF FF est ajouté au milieu.
+Exemple: 
+- Adresse MAC : 1C 3E 84 1E 4E E6
+- HostID:       1C 3E 84 FF FF 1E 4F E6
+
+Le NetID est demandé au routeur grâce à une requête ICMP v6.
