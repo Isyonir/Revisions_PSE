@@ -212,6 +212,17 @@ Le subnetting consite à couper un réseau en plusieurs sous-réseaux. Le décou
   </tr>  
 </table>
 
+### Le supernetting
+Utilisé par les FAI pour simplifier leur tables de routage, on fusionne des réseaux dans avec un masque plus petit.
+<table style="width:100%;text-align:center;"> 
+  <tr>
+    <td colspan="2">172.16.0.0/16</td>
+    <td colspan="2">172.17.0.0/16</td>
+  </tr>
+  <tr>
+    <td colspan="4">172.16.0.0/15</td>
+  </tr>
+</table>
 
 ## ARP et ICMP
 
