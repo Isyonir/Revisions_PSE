@@ -9,7 +9,7 @@ Il ne faut pas confondre un programme qui est le fichier présent sur le disque 
 Il peut s'exécuter soit en mode "kernel" (privilégié) et dans ce cas il a accès aux instructions privilégiées qui permettent notemment l'accès direct au matériel, soit en mode "user" dans ce cas, le processus est limité, et ne peut exécuter que ses propres instructions et il n'a pas accès direct au matériel.
 Un processus exécuté en mode "user" peut passer en mode "kernel" pour exécuter certaines instructions.
 
-La plage mémoire allouée pour chaque processus par l'OS est découpé en plusieurs parties. Leur nombre et leur arrangement peut dépendre de l'OS (Windows, Linux).
+La plage mémoire allouée pour chaque processus par l'OS est découpé en plusieurs parties. Leur nombre et leur arrangement peut dépendre de l'OS (Windows, Linux) et de la méthode de gestion mémoire utilisée (pagination ou segmentation).
 
 On retrouve dans tous les cas:
  - Le stack (la pile) Variables locales
@@ -17,7 +17,8 @@ On retrouve dans tous les cas:
  - Data: Contient les variables initialisées (Ex: int nb = 5;)
  - BSS: Contient les variables non initilisées (Ex: int nb;)
  - Text: Instructions du programme en mémoire 
- 
+
+ Exemple de la structure mémoire d'un processus sur un OS utilisant la segmentation
 ![Structure mémoire processus](../images/processus_memoire.png)
  
 Les processus possèdent ce que l'on appelle des "états".
