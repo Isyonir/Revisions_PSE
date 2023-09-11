@@ -28,13 +28,13 @@ Le nombre de machines adressables est égal à 2^8 -2 = 254
 Les classes d'adresses : 
 <table>
   <tr>
-    <td>Classe</td>
-    <td>Bits de départ</td>
-    <td>Début</td>
-    <td>Fin</td>
-    <td>CIDR</td>
-    <td>Masque</td>
-    <td>Machines</td>
+    <th>Classe</th>
+    <th>Bits de départ</th>
+    <th>Début</th>
+    <th>Fin</th>
+    <th>CIDR</th>
+    <th>Masque</th>
+    <th>Machines</th>
   </tr>
   <tr>
     <td>A</td>
@@ -82,6 +82,7 @@ Les classes d'adresses :
     <td></td>
   </tr>
 </table>
+
 ### Adresses réservées
 Type d'adresses
 - Adresses réservées
@@ -91,6 +92,57 @@ Adresses non routables, utilisables uniquement sur le réseau local. Uniques sur
 - Adresses publiques
 Toutes les adresses qui ne sont ni réservées ni privées. Adresses routables et uniques sur Internet Fournies par le Fournisseur d'Accès Internet (FAI)
 
+<table>
+  <tr>
+    <th>Adresse</th>
+    <th>Début</th>
+    <th>Fin</th>
+    <th>CIDR</th>
+    <th>Masque</th>
+  </tr>
+  <tr>
+    <td>Adresse nulle</td>
+    <td>0.0.0.0</td>
+    <td>0.0.0.0</td>
+    <td>/32</td>
+    <td>255.255.255.255</td>
+  </tr>
+  <tr>
+    <td>Broadcast général</td>
+    <td>255.255.255.255</td>
+    <td>255.255.255.255</td>
+    <td>/32</td>
+    <td>255.255.255.255</td>
+  </tr>
+  <tr>
+    <td>Loopback</td>
+    <td>127.0.0.0</td>
+    <td>127.255.255.255</td>
+    <td>/8</td>
+    <td>255.0.0.0</td>
+  </tr>
+  <tr>
+    <td>Apipa (auto-configurée)</td>
+    <td>169.254.0.0</td>
+    <td>169.254.255.255</td>
+    <td>/16</td>
+    <td>255.255.0.0</td>
+  </tr>
+  <tr>
+    <td>Multicast</td>
+    <td>224.0.0.0</td>
+    <td>239.255.255.255</td>
+    <td>/4</td>
+    <td>240.0.0.0</td>
+  </tr>
+  <tr>
+    <td>NAT à grande échelle (RIE)</td>
+    <td>100.64.0.0</td>
+    <td>100.127.255.255</td>
+    <td>/10</td>
+    <td>255.192.0.0</td>
+  </tr>
+</table>
 
 ### CIDR et subnetting
 
