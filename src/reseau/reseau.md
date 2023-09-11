@@ -215,6 +215,12 @@ Le subnetting consite à couper un réseau en plusieurs sous-réseaux. Le décou
 ### Le supernetting
 Utilisé par les FAI pour simplifier leur tables de routage, on fusionne des réseaux dans avec un masque plus petit.
 <table style="width:100%;text-align:center;"> 
+<tr>
+    <td>192.168.0.0/24</td>
+    <td>192.168.1.0/24</td>
+    <td>192.168.2.0/24</td>
+    <td>192.168.3.0/24</td>
+  </tr>
   <tr>
     <td colspan="2">172.16.0.0/16</td>
     <td colspan="2">172.17.0.0/16</td>
@@ -223,6 +229,21 @@ Utilisé par les FAI pour simplifier leur tables de routage, on fusionne des ré
     <td colspan="4">172.16.0.0/15</td>
   </tr>
 </table>
+## Le paquet IP
+
+Schéma paquet IP :
+
+Champs de l'entête
+- Version : 4 bits indiquant la version (4)
+- Longueur de l'entête : 4 bits indiquant le nombre de mots de 4 octets composant l'entête
+- TOS : 8 bits permettant d'activer la QOS
+- Longueur totale : 16 bits indiquant le nombre total d'octets du paquet
+- Identification : 16 bits identifiant les fragments d'un même paquet
+- Don't fragment : 1 bit interdisant la fragmentation
+- More fragments : 1 bit indiquant que d'autres fragments suivent
+- Fragment offset : 13 bits indiquant la position du fragment en nombre de mots de 8 octets
+- TTL : 8 bits indiquant la durée de vie d'un paquet
+- Protocole : 8 bits indiquant le protocole de la couche supérieure (TCP, UDP, ICMP)
 
 ## ARP et ICMP
 
