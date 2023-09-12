@@ -22,11 +22,13 @@ Il existe plusieurs types de ports :
 - La machine confirme la connexion avec un ACK 
 - La session TCP est ouverte 
 
+
+![Ouverture de session TCP](../images/3wayhandshake.png)
+
 ### Numéro de séquence
-Le TCP fonctionne en mode connecté, il utilise un numéro de séquence pour tracer les envois, si un segment manque il est renvoyé : 
+Le TCP fonctionne en mode connecté, il utilise un numéro de séquence pour tracer les envois, si un segment manque il est renvoyé :
 
-
-
+![Sequence TCP](../images/sequencetcp.png)
 
 
 ## UDP
