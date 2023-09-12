@@ -10,7 +10,7 @@ Il fonctionne en mode connecté, ordonné et bi-directionnel.
 Le TCP est utilisé pour le HTTP, FTP, SMB...
 
 ### Les ports
-Les ports viennent s'ajouter à l'adresse IP pour céer un couplé appelé "Socket TCP", il permet d'identifier un canal de communication sur une machine.
+Les ports viennent s'ajouter à l'adresse IP pour créer un couple appelé "Socket TCP", il permet d'identifier un canal de communication sur une machine.
 Il existe plusieurs types de ports :
   - Les ports connus de 0 à 1023 : ils sont reservés à certaines application (HTTP: 80)
   - Les ports enregistrés, de 1024 à 49151
