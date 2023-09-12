@@ -3,11 +3,11 @@
 ## Généralités
 
 Le processeur est l'équipement physique d'une machine qui sert à exécuter des instructions.
-Les processeurs ont des jeux d'instructions qui dépendent de leur architecture.
+Les processeurs ont des jeux d'instructions (commandes possibles) qui dépendent de leur architecture.
 Quelques architectures:
 - x86-64 (Extension 64 bits de l'architecture x86)
-- ARM
-- MIPS
+- ARM (Utilisé notemment sur les processeurs mobiles)
+- z/Architecture (mainframe IBM)
 
 ## Les registres
 
