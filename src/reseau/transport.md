@@ -21,16 +21,20 @@ Il existe plusieurs types de ports :
 - Le serveur répond avec un accusé de réception ACK (acknoledge) ainsi que le drapeau SYN à 1
 - La machine confirme la connexion avec un ACK 
 - La session TCP est ouverte 
-
-
 ![Ouverture de session TCP](../images/3wayhandshake.png)
 
 ### Numéro de séquence
 Le TCP fonctionne en mode connecté, il utilise un numéro de séquence pour tracer les envois, si un segment manque il est renvoyé :
-
 ![Sequence TCP](../images/sequencetcp.png)
 
+### Fermeture de session 
+Pour fermer une session TCP :
+- une des machine envoie un paquet avec le drapeau FIN à 1.
+- L'autre machine envoie un accusé de reception ACK ainsi que le drapeau FIN à 1.
+- La première machine renvoie donc un paquet ACK pour confirmer.
+- La session est cloturée.
 
+  
 ## UDP
 
 ## QUIC
