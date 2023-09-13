@@ -31,6 +31,8 @@ Le MBR/GPT va chercher une partition active bootable dans sa table, une fois tro
 
 A partir de là, l'OS prend le relais
 
+![Image boot](../images/boot.png)
+
 ## Différences GPT et MBR
 
 
