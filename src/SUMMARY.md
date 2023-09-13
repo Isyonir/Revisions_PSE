@@ -12,6 +12,11 @@
   		- [Synchronisation](./systeme/processus_synchronisation.md)
 		- [Communication](./systeme/processus_communication.md)
   	- [Démarrage](./systeme/demarrage.md)
+  		- [Démarrage via un BIOS](./systeme/demarrage_bios.md)
+		- [Démarrage via un UEFI](./systeme/demarrage_uefi.md)
+		- [Différences BIOS/UEFI](./systeme/demarrage_bios_uefi.md)
+		- [Différences MBR/GPT](./systeme/demarrage_mbr_gpt.md)
+		- [Le PXE](./systeme/demarrage_pxe.md)
   		- [Démarrage Windows]
   	 	- [Démarrage Linux] 
 - [Réseau](./reseau/reseau.md)
