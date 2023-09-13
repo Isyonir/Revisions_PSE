@@ -1,7 +1,7 @@
 # Démarrage d'une machine
 
 La séquence de démarrage décrite est valable pour les ordinateurs possédant un processeur d'architecture x86-64.
-Elle correspond ç un démarrage à froid. Dans le cas d'un démarrage à chaud, certaines étapes ne sont pas executées (Ex: Découverte des périphériques par le BIOS)
+Elle correspond à un démarrage à froid. Dans le cas d'un démarrage à chaud, certaines étapes ne sont pas executées (Ex: Découverte des périphériques par le BIOS)
 
 Lors du démarrage du PC, le processeur est démarré en mode réel (C'est à dire qu'il n'utilise pas d'adresses virtuelles, il utilise les adresses physiques)
 En mode réel, la mémoire est segmentée.
@@ -60,7 +60,7 @@ Il a les même rôles que le BIOS, mais contrairement à lui, il possède plusie
 - La programmation de l'UEFI peut se faire en C (contrairement au BIOS qui est écrit en assembleur)
 - Il possède un shell utilisable
 
-L'UEFI offre des fonctions appelées services qui peuvent être appelées par l'OS.
+L'UEFI offre des fonctions appelées "services" qui peuvent être appelées par l'OS.
 
 ## Différences GPT et MBR
 
