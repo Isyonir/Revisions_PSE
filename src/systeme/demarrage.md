@@ -35,6 +35,7 @@ Le MBR/GPT va chercher une partition active bootable dans sa table, une fois tro
 A partir de là, l'OS prend le relais.
 
 ![Image boot](../images/boot.png)
+![Image boot bios](../images/bios.png)
 
 ## Démarrage par un UEFI
 
@@ -45,8 +46,15 @@ A partir de là, l'OS prend le relais.
 - TSL (Transient System Load): Stage intermédiaire avant la prise en main par l'OS, c'est à la fin de ce stage que le bootloader de l'OS est exécuté
 - RT (Runtime): L'UEFI donne la main à l'OS, mais ce dernier peut continuer à utiliser ses fonctionnalités (l'UEFI définit certaines fonctions que l'OS peut utiliser)
 
-Contrairement au BIOS, l'UEFI
+Contrairement au BIOS, l'UEFI ne se base pas sur les secteurs de boot pour le démarrage de l'OS.
+Un boot manager intégré fait la liste des boot loaders trouvés sur les disques.
+Les boot loaders sont des fichiers portant l'extension ".efi" et dont le chemin d'accès est standardisé:
+PARTITION_SYSTEME_EFI/efi/boot/<NOM>.efi
+Le boot loader est ensuite chargé de démarrer le système d'exploitation.
 
+A noter qu'un UEFI peut démarrer en mode CSM (Compatibility Support Module), afin de suivre la séquence de boot d'un BIOS classique dans le cas de l'utilisation d'un vieil OS.
+
+![Image boot uefi](../images/uefi.png)
 
 ## Différences entre BIOS et UEFI
 
@@ -75,6 +83,8 @@ Il a les même rôles que le BIOS, mais contrairement à lui, il possède plusie
 - Il possède un shell utilisable
 
 L'UEFI offre des fonctions appelées "services" qui peuvent être appelées par l'OS.
+
+Une fonctionnalité bien connue de l'UEFI est le Secure Boot qui permet d'empêcher le chargement de bootloaders d'OS non signés. Ce qui avait à l'époque posé des soucis pour les distributions Linux.
 
 ## Différences GPT et MBR
 
