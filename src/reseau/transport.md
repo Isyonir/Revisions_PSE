@@ -47,7 +47,7 @@ La valeur peut être négociée (comme sur linux) ou imposée (Windows)
 ## L'entête TCP
 ![Entête-TCP](../images/entete_tcp.png)
 
-Port source : 16 bits
+- Port source : 16 bits
 - Port destination : 16 bits
 - Numéro de séquence : 32 bits permettant de suivre la progression des
 échanges
