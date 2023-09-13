@@ -35,7 +35,7 @@ Le MBR/GPT va chercher une partition active bootable dans sa table, une fois tro
 A partir de là, l'OS prend le relais.
 
 ![Image boot](../images/boot.png)
-![Image boot bios](../images/bios.png)
+![Image boot bios](../images/bios.jpg)
 
 ## Démarrage par un UEFI
 
@@ -54,7 +54,7 @@ Le boot loader est ensuite chargé de démarrer le système d'exploitation.
 
 A noter qu'un UEFI peut démarrer en mode CSM (Compatibility Support Module), afin de suivre la séquence de boot d'un BIOS classique dans le cas de l'utilisation d'un vieil OS.
 
-![Image boot uefi](../images/uefi.png)
+![Image boot uefi](../images/uefi.jpg)
 
 ## Différences entre BIOS et UEFI
 
