@@ -44,12 +44,6 @@ Il a deux rôles principaux:
 
 Les interruptions du BIOS sont des "fonctions" que l'OS peut appeler pour interagir directement avec le matériel de manière basique sans avoir besoin de pilotes spécifiques.
 
-Exemple pour l'affichage d'un message à l'écran:
-
- mov ah, 0x0e    ; function number = 0Eh : Display Character
- mov al, 'A'     ; AL = code of character to display
- int 0x10        ; call INT 10h, BIOS video service
-
  Cependant, les interruptions ne sont plus utilisées par les OS de nos jours à cause de plusieurs raisons:
  - Les interruptions ne peuvent s'exécuter que si le processeur est en mode réel. Dans le cas d'un appel à une interruption, il faut donc : Passer du mode protégé au mode réel, exécuter l'interruption, repasse en mode protégé, ce qui est long.
  - Le BIOS étant lent, le temps d'exécution de ces interruptions est trop élevé pour une utilisation pratique dans un OS moderne.
