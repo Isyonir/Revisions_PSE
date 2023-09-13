@@ -96,7 +96,7 @@ Il fonctionne sous UDP mais en mode connecté, il fusionne le transport et le ch
 
 ## Quelques ports communs : 
 | Service | Port               |
-|---------|--------------------|
+|:-------:|:------------------:|
 | DNS     | 53 / UDP, 53 / TCP |
 | SSH     | 22 / TCP           |
 | HTTP    | 80 / TCP           |
