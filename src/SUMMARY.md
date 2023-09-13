@@ -11,6 +11,9 @@
 		- [Multi-tâche schéma](./systeme/multitache_schema.md)
   		- [Synchronisation](./systeme/processus_synchronisation.md)
 		- [Communication](./systeme/processus_communication.md)
+  	- [Démarrage](./systeme/demarrage.md)
+  		- [Démarrage Windows]
+  	 	- [Démarrage Linux] 
 - [Réseau](./reseau/reseau.md)
 	- [Généralités](./reseau/generalites.md)
 	- [Modèle OSI](./reseau/osi.md)
