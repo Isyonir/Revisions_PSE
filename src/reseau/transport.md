@@ -31,7 +31,7 @@ Le TCP fonctionne en mode connecté, il utilise un numéro de séquence pour tra
 
 ### Fermeture de session 
 Pour fermer une session TCP :
-- une des machine envoie un paquet avec le drapeau FIN à 1.
+- Une des machine envoie un paquet avec le drapeau FIN à 1.
 - L'autre machine envoie un accusé de reception ACK ainsi que le drapeau FIN à 1.
 - La première machine renvoie donc un paquet ACK pour confirmer.
 - La session est cloturée.
