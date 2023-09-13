@@ -80,7 +80,8 @@ L'UDP est utilisé dans les protocoles suivants :
 - SNMP
 - TOIP
 - ...
-- 
+
+  
 ### Les ports
 Les ports viennent s'ajouter à l'adresse IP pour créer un couple appelé "Socket UDP", il permet d'identifier un canal de communication sur une machine.
 Identique au TCP
