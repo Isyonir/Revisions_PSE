@@ -17,8 +17,8 @@
 		- [Différences BIOS/UEFI](./systeme/demarrage_bios_uefi.md)
 		- [Différences MBR/GPT](./systeme/demarrage_mbr_gpt.md)
 		- [Le PXE](./systeme/demarrage_pxe.md)
-  		- [Démarrage Windows]
-  	 	- [Démarrage Linux] 
+  		- Démarrage Windows
+  	 	- Démarrage Linux
 - [Réseau](./reseau/reseau.md)
 	- [Généralités](./reseau/generalites.md)
 	- [Modèle OSI](./reseau/osi.md)
