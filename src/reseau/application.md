@@ -76,9 +76,12 @@ HTTPS permet d'échanger des informations confidentielles, ce n'est pas un nouve
 Le port par défaut est le 443.
 ### Certificats : 
 HTTPS utilise des certificats qui sont authentifés par des autorités de Certification qui signent le certificat. Le navigateur vérifie l'authenticité du certificat lors de son usage.
+
 ![Schéma certicat](../images/certificatweb.png)
 
 ## FTP (File Transfer Protocol)
+
+
 ## SMTP / POP3 / IMAP
 ## LDAP (Lightweight Directory Access Protocol)
 ## SNMP (Simple Network Management Protocol)
