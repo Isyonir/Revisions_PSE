@@ -1,4 +1,4 @@
-# Démarrage
+# Démarrage Linux
 
 Le démarrage décrit est celui d'une distribution Linux présente sur une machine possédant un UEFI
 
