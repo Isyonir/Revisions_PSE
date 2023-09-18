@@ -1,6 +1,6 @@
 # Couche 7 : Application
 
-## DHCP (Dynamic Host Configuration Protocol)## DNS (Domain Name Service)
+## DHCP (Dynamic Host Configuration Protocol)
 
 Le DHCP permet l'attribution automatique de la configuration réseau au démarrage d'une machine.
 
@@ -80,8 +80,68 @@ HTTPS utilise des certificats qui sont authentifés par des autorités de Certif
 ![Schéma certicat](../images/certificatweb.png)
 
 ## FTP (File Transfer Protocol)
+Le FTP permet de transférer des fichiers d'une machine à l'autre. Le FTP utilise les ports 21 (canal de commande) et 20 (canal de données). 
 
+Le FTP n'est pas sécurisé, le nom d'utilisateur et mot de passe sont envoyés en clair. 
 
+Il possède deux modes de fonctionnement : 
+  - Actif :
+    - La machine contacte le serveur pour lui demander un fichier
+    - Le serveur crée un canal de données (port 21 pour les commandes et 20 pour les données)
+    - Inconvénient, la majorité des pare-feux ne laissent pas passer les communications entrantes pour raison de sécurité.  
+  - Passif:
+    - La machine contacte le serveur et lui envoie une commande PASV.
+    - Le serveur répond en annonçant l'IP et le port à contacter pour les données
+    - La machine crée le canal de données vers le serveur : port 21 et un port au choix déterminé par la machine.
+    - Avantages: Comme c'est le client qui contacte le serveur, le pare-feux ne bloque pas la communication.
+   
+  ### Sécurité 
+  Le FTP n'est pas sécurisé mais il peut l'être avec l'utilisation de certificat et du SSL (FTPS). 
+
+  Pour le transfert de fichier le HTTPS et SFTP sont utilisés plutôt que le FTPS.
+  Attention : SFTP n'est pas FTPS 
+     - SFTP : protocole différent basé sur SSH.
+     - FTPS : FTP avec surcouche SSL.
+     
 ## SMTP / POP3 / IMAP
+
 ## LDAP (Lightweight Directory Access Protocol)
+
+
+
 ## SNMP (Simple Network Management Protocol)
+
+Le SNMP est un protocole permettant d'interroger un matériel pour obtenir des informations sur ce dernier. 
+SNMP est encapsulé dans des trames UDP, il s'agit d'un protocole de type question/réponse asynchrone. 
+
+- Certains événements du réseau, tels que des erreurs de transmission, peuvent déclencher des alarmes envoyées aux stations de gestion.
+- La plupart du temps, les managers effectuent une interrogation périodique des agents de manière à vérifier leur état.
+- La MIB (Management Information Base) regroupe l'ensemble des variables relatives aux matériels.
+- La structure de la MIB est en forme d'arbre pour que chaque objet normalisé soit positionné à un emplacement unique.
+- Il est possible de modifier en temps réel les paramètres de l'équipement
+- Le principal avantage est de proposer une structure d'information commune à tous les type de matériels. (Ainsi on peut connaitre le nombre d'interfaces d'un équipement, quelque soit l'équipement.)
+- Malheureusement, comme la MIB standard ne contient pas tous les éléments possibles, les fabricants ont pris l'habitude d'avoir une MIB propriétaire (Branche .Priv du niveau 5) et les données sur le chemin standard ne sont pas toujours valorisées, ce qui rend l'avantage caduque.
+- La complexité de la structure des données rend aussi son utilisation pénible.
+
+
+### Sécurité
+
+Il existe trois versions de SNMP V1, V2 et V3. Seule la V3 est réellement sécurisée.
+- Pour la V1, on accède aux informations en donnant le nom d'une communauté SNMP qui passe en clair sur le réseau et est identique pour tous les utilisateurs (public par défaut)
+- SNMP permet également de modifier des paramètres du matériel si c'est prévu par le fabriquant (Ex : fermer un port d'un switch). Une autre communauté en écriture (Private par défaut) permet d'écrire.
+- SNMPV3 offre une sécurisation avec installation d'un serveur RADIUS.
+
+### Organisation de la MIB
+Les informations en SNMP sont organisées de manière hiérarchique. Chaque noeud porte seulement un numéro pour l'identifier. Ces identifiants sont unique par niveau. Ainsi, l'identifiant 1 indique, par exemple, le noeud ISO au niveau 1, le noeud Internet au niveau 4, le noeud Directory au niveau 5.
+
+Pour s'y retrouver dans ces numéros, on utilise un dictionnaire (la MIB) qui permet de convertir l'identifiant en nom.
+
+![image](https://github.com/Isyonir/Revisions_PSE/assets/143949453/79057477-6b78-42c1-a1c7-356f582a38e9)
+
+### Interrogation
+Le chemin d'accès à l'information peut être écrit :
+  - de manière numérique
+  - avec les nom des noeuds
+  - Pour réaliser une requête SNMP, il faut un outil tel que Getif, snmpwalk, etc...
+
+![image](https://github.com/Isyonir/Revisions_PSE/assets/143949453/7c3da003-a663-42d9-a4d4-9f8f90ff26b6)
