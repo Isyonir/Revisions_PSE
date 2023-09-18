@@ -8,3 +8,5 @@ Elle correspond à un démarrage à froid. Dans le cas d'un démarrage à chaud,
 - [Différences BIOS/UEFI](./demarrage_bios_uefi.md)
 - [Différences MBR/GPT](./demarrage_mbr_gpt.md)
 - [Le PXE](./demarrage_pxe.md)
+- [Démarrage Windows](./demarrage_windows.md)
+- [Démarrage Linux](./demarrage_linux.md)
