@@ -1,4 +1,4 @@
-# Démarrage
+# Démarrage Windows
 
 Ici est décrit le processus de démarrage pour Windows verion Vista et au delà en démarrage à froid (Donc, pas en veille ni hybernation)
 
