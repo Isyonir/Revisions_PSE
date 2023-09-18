@@ -22,9 +22,14 @@ De nos jours, le processus "init" le plus utilisé est "systemd".
 Son but est de démarrer l'espace utilisateur, et de lancer les processus utilisateur.
 
 ## systemd
-Lorsqu'il est lancé, in va interpréter le fichier de configuration "system.conf".
+Systemd est le système d'initialisation utilisé par les distributions récentes, il intégre de base de nombreux services:
+- journalctl (gestionnaire de logs)
+- Networkmanager (gestionnaire de réseau)
+- dbus (gestionnaire de communication inter-processus)
+- timesync (gestionnaire du temps)
+- pam (gestionnaire de l'identification)
 
-Il se base sur un système d'"unités".
+Il se base sur un système d'unités.
 Chaque unité regroupe des objets (programmes) utiles pour le démarrage et la gestion du système.
 3 états sont possibles pour ces unités : 
 - Actif
@@ -41,5 +46,10 @@ Quelques unités disponibles :
 - Swap
 
 Les unités sont chargées et exécutées au moment du démarrage dès qu'elles sont requises.
+Lors du démarrage, systemd va démarrer les unités qui corresondent à la cible de démarrage (target)
+Plusieurs cibles sont possibles (Ex : basic, multi-user, rescue, ...)
 
+## Schéma simplifié
+
+![Schéma démarrage Linux](../images/demarrage_linux.png)
 
