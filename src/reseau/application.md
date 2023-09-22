@@ -104,6 +104,38 @@ Il possède deux modes de fonctionnement :
      - FTPS : FTP avec surcouche SSL.
      
 ## SMTP / POP3 / IMAP
+Principe de fonctionnement :
+  - La messagerie utilise plusieurs protocoles différents pour fonctionner.
+  - La partie acheminement des messager est effectuée grâce au protocole SMTP, jusqu'à la boite aux lettre du destinataire.
+  - La partie récupération des messages dans la boite aux lettre est confiée aux protocoles POP3 ou IMAP.
+![image](https://github.com/Isyonir/Revisions_PSE/assets/143949453/f8b05081-e249-43de-8356-1d96f73da57b)
+
+### SMTP (Simple Mail Transfer Protocol)
+Permet de transférer en connexion point à point, le courrier électronique d'un serveur à un autre (utilisé également par le client pour envoyer un courriel).
+
+SMTP fonctionne en mode connecté (TCP) en utilisant par défaut le port 25.
+
+Le SMTP est un protocole en clair. Toutes les informations sont lisibles.
+
+Il existe deux manières de protéger les informations :
+  - Le SMTP Normal sur le port 143, en utilisant la commande STARTTLS
+  - Le SMTPS sur le port 993 qui utilise directement le SSL/TLS
+
+Authentification
+  - Le protocole SMTP ne garantie ni la provenance du message, ni la réception par le destinataire.
+  - Pour savoir si le destinataire a bien reçu/lu le message, cela passe par un accusé de réception envoyé par le client. Tous les clients de messagerie proposent de choisir si l'on souhaite envoyer un accusé de réception ou non.
+  - En cas d'adresse non valide, c'est le serveur destinataire qui enverra une erreur, s'il son paramétrage l'autorise. Certains serveurs ne répondent simplement pas.
+
+### POP (Post Office Protocole)
+Il s'agit d'un protocole qui permet de récupérer le courrier électronique sur un serveur à partir d'un client en utilisant le port TCP 110 pour POP3 ou le port 995 pour la version sécurisée POP3S.
+Le message est transféré sur le client et en général supprimé du serveur. Le contenu de la boite de messagerie est donc conservée sur le client, seuls les nouveaux messages sont sur le serveur (sauf paramétrage particulier du client de messagerie)
+
+Le mot de passe est envoyé après codage en Base64.
+
+### IMAP (Internet Message Access Protocol)
+Ce protocole ermet de récupérer le courrier électronique sur un serveur à partir d'un client en utilisant le port TCP 143 pour IMAP ou le port 993 pour la version sécurisée IMAPS. Le message demeure sur le serveur après avoir été relevé par le client. Il peut donc être lu depuis plusieurs clients. Par sécurité, chaque commande/réponse est numérotée, une erreur dans la séquence provoque une erreur de communication.
+
+Le contenu du texte passe en clair.
 
 ## LDAP (Lightweight Directory Access Protocol)
 
