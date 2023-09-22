@@ -11,12 +11,21 @@ Elle se fait en plusieurs étapes :
 Ce broadcast permet aussi de prévenir les serveurs DHCP non choisis afin qu'ils puissent libérer les adresses proposées.
 - DHCP ACK : Le serveur DHCP accuse réception et accorde l'adresse IP pour une durée déterminée (bail). Ce message peut aussi contenir des paramètres de configuration supplémentaires (passerelle, serveur DNS...)
 
+Un serveur DHCP est personnalisable avec plusieurs options :
+  - La durée du bail
+  - La plage d'IP disponible
+  - L'adresse de la passerelle
+  - L'adresse du serveur DNS (ou des serveurs DNS)
+  - L'adresse du serveur PXE,s'il y en a un pour le déploiement automatisé.
+
 ## DNS (Domaine Name Service)
 
 Le DNS est une base de donnée distribuée accessible via un système de client-serveur. Cette base de donnée contient les correpondances IP - nom de domaine des sites internet.
 
 Le système est basée sur une hierarchie de noms de domaines partant d'une racine, représenté par un point , qui n'apparait que dans la configuration des serveurs DNS.
 On trouve ensuite au 1er niveau les TLD (Top Level Domains) qui sont gérés par l'ICANN. À partir de ces TLD, on va trouver les domaines inférieurs et sous-domaines dont la gestion est décentralisée.
+
+Dans un réseau privé, il est possible d'utiliser un DNS local qui est un mirroir d'un DNS extérieur avec en plus des règles personnalisées pour avoir des noms pour les serveurs locaux.
 
 ### Les serveurs racines (Root Servers)
 Les serveurs DNS racines gèrent les délégations pour les noms de domaine de premier niveau (TLD). 
@@ -136,10 +145,6 @@ Le mot de passe est envoyé après codage en Base64.
 Ce protocole ermet de récupérer le courrier électronique sur un serveur à partir d'un client en utilisant le port TCP 143 pour IMAP ou le port 993 pour la version sécurisée IMAPS. Le message demeure sur le serveur après avoir été relevé par le client. Il peut donc être lu depuis plusieurs clients. Par sécurité, chaque commande/réponse est numérotée, une erreur dans la séquence provoque une erreur de communication.
 
 Le contenu du texte passe en clair.
-
-## LDAP (Lightweight Directory Access Protocol)
-
-
 
 ## SNMP (Simple Network Management Protocol)
 
