@@ -4,8 +4,8 @@ Quelques commandes utiles sous Linux
 
 # Sommaire
 1. [Système de fichiers](#Système-de-fichiers)
-2. ![Gestion des tâches planifiées]
-3. ![Gestion des utilisateurs]
+2. ![Gestion des tâches planifiées](#Gestion-des-tâches-planifiées)
+3. ![Gestion des utilisateurs](#Gestion-des-utilisateurs)
 
 
 ## Système de fichiers
