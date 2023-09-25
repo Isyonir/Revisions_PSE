@@ -31,10 +31,10 @@
  
 
 - Logiciel
-  - architecture logicielle (client-serveur, n-tiers)
-  - haute disponibilité
+  - ~~architecture logicielle (client-serveur, n-tiers)~~
+  - ~~haute disponibilité~~
   - IHM, notions sur l'ergonomie des applications, langages de présentation (HTML, CSS)
-  - métrologie
+  - ~~métrologie~~
   - mesure des performances (temps de réponse, débits des traitements)
  
     
