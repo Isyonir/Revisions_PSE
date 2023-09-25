@@ -220,3 +220,78 @@ Ex:
 ```
 ## Gestion des utilisateurs
 
+### groupadd
+Ajout d'un groupe
+
+-g : Préciser le GID
+
+Ex: 
+```
+
+```
+
+### groupmod
+Modification d'un groupe
+
+-g : Préciser le GID
+
+Ex: 
+```
+
+```
+
+### groupdel
+Suppression d'un groupe
+
+Ex: 
+```
+
+```
+
+### useradd
+Ajout d'un utilisateur
+
+-u : UID
+-g : Groupe principal
+-G : Groupe secondaire
+-c : Commentaire
+-d : Répertoire de connexion
+-s : Shell utilisé par l'utilisateur
+
+Ex: 
+```
+
+```
+
+### usermod
+Modification d'un utilisateur
+
+-u : UID
+-g : Groupe principal
+-G : Groupe secondaire
+-c : Commentaire
+-d : Répertoire de connexion
+-s : Shell utilisé par l'utilisateur
+
+Ex: 
+```
+
+```
+
+### userdel
+Suppression d'un utilisateur
+
+Ex: 
+```
+
+```
+
+### whoami
+Affiche le nom de l'utilisateur courant
+
+Ex: 
+```
+
+```
+
+### id
