@@ -51,5 +51,5 @@ Plusieurs cibles sont possibles (Ex : basic, multi-user, rescue, ...)
 
 ## Schéma simplifié
 
-![Schéma démarrage Linux](../images/demarrage_linux.png)
+![Schéma démarrage Linux](../../images/demarrage_linux.png)
 
