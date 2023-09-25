@@ -2,6 +2,12 @@
 
 Quelques commandes utiles sous Linux
 
+# Sommaire
+1. [Système de fichiers](<a name=Système de fichiers>)
+2. ![Gestion des tâches planifiées](<a name=Gestion des tâches planifiées>)
+3. ![Gestion des utilisateurs][<a name=Gestion des utilisateurs>)
+
+
 ## Système de fichiers
 
 ### pwd
@@ -198,4 +204,19 @@ Ex:
 ```
 
 ```
+
+## Gestion des tâches planifiées
+
+### crontab
+Manipulation des tâches planifiées
+
+-l : Lister les tâches de l'utilisateur courant
+-e : Edition des tâches
+-r : Suppression de toutes les tâches
+
+Ex: 
+```
+
+```
+## Gestion des utilisateurs
 
