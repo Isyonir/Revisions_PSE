@@ -18,15 +18,15 @@
 
 
 - Réseau et architecture
-  - réseau
-  - modèle OSI
-  - architecture TCP/IP
-  - protocoles de différents niveaux
-  - matériels d’inter-connexion
-  - architecture
+  - ~~réseau~~
+  - ~~modèle OSI~~
+  - ~~architecture TCP/IP~~
+  - ~~protocoles de différents niveaux~~
+  - ~~matériels d’inter-connexion~~
+  - ~~architecture~~
   - CPU
   - mémoire, hiérarchie mémoire
-  - périphériques (disques, réseau)
+  - ~~périphériques (disques, réseau)~~
   - les différents types d’architectures matérielles (gros systèmes)
  
 
