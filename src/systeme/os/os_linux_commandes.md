@@ -3,9 +3,9 @@
 Quelques commandes utiles sous Linux
 
 # Sommaire
-1. [Système de fichiers](<a name=Système de fichiers>)
-2. ![Gestion des tâches planifiées](<a name=Gestion des tâches planifiées>)
-3. ![Gestion des utilisateurs][<a name=Gestion des utilisateurs>)
+1. [Système de fichiers](<a name=#"Système de fichiers">)
+2. ![Gestion des tâches planifiées](<a name=#"Gestion des tâches planifiées">)
+3. ![Gestion des utilisateurs](<a name=#"Gestion des utilisateurs">)
 
 
 ## Système de fichiers
