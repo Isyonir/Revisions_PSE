@@ -1,7 +1,6 @@
 # Métrologie et supervision
 
-La supervision permet de monitorer des éléments physiques et systèmes d'un serveur. Il est possible de monitorer des élements comme la RAM, l'état des disques, l'état de certains
-services...
+La supervision permet de monitorer des éléments physiques et systèmes d'un serveur. Il est possible de monitorer des élements comme la RAM, l'état des disques, l'état de certains services... La supervision peut se faire avec le protocole SNMP ou un agent installé sur un client.
 
 Nagios Core est une application informatique open source qui supervise des systèmes, réseaux et infrastructure. Nagios offre des services de supervision et d'alerte pour des serveurs, switch, applications et services. Il alerte les utilisateurs quand les choses se passent mal et les alerte une seconde fois lorsque le problème a été résolu.
 
