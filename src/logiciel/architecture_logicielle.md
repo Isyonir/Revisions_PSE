@@ -1,4 +1,4 @@
-### Architecture logicielle
+# Architecture logicielle
 
 ## Client - Serveur 
 Le modèle client serveur est une structure d'application distribué qui sépare les tâches ou charges de travail entre fournisseurs de ressource ou service, 
