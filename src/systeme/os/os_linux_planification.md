@@ -21,13 +21,13 @@ Exemple d'affichage de la commande crontab -e
 
 ```
 # COMMANTAIRE
- .---------------- minute (0 - 59)
- |  .------------- hour (0 - 23)
- |  |  .---------- day of month (1 - 31)
- |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
- |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+ .---------------- Minutes (0 - 59)
+ |  .------------- Heures (0 - 23)
+ |  |  .---------- Jour du mois (1 - 31)
+ |  |  |  .------- Mois (1 - 12) OU jan,feb,mar,apr ...
+ |  |  |  |  .---- Jour de la semaine (0 - 6) (Dimanche = 0 ou 7) OU sun,mon,tue,wed,thu,fri,sat
  |  |  |  |  |
- *  *  *  *  *  user command to be executed
+ *  *  *  *  *  utilisateur Commande à exécuter
 ```
 On peut utiliser les notations suivantes :
 - X-Y : De X à Y
