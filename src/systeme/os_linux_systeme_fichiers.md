@@ -158,6 +158,8 @@ Un masque doit être précisé dans le cas où l'on ajoute des permissions de ty
 Ce masque s'applique aux droits des ACL_USER, ACL_GROUP et **ACL_GROUP_OBJ**.  
 Il s'agit par défaut de la valeur la plus permissive hors propriétaire.
 
+![Image masque ACL](../images/os_linux_acl.png)
+
 L'héritage des ACL dans un répertoire ne se fait que si il y a présence d'entrées par défaut : DEFAULT_ACL_USER et DEFAULT_ACL_GROUP.
 Attention : **le retrait d'une règle par défaut n'est pas récursif !**
 
