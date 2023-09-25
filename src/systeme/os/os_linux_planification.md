@@ -33,3 +33,11 @@ On peut utiliser les notations suivantes :
 - X-Y : De X à Y
 - */X : Tous les X
 - X, Y : X et Y
+- @daily : Tous les jours à 00:00
+- @weekly : Tous les DImanches à 00:00
+- @monthly : Tous les premiers jours du mois à 00:00
+- @yearly : Tous les premiers jours du mois de janvier à 00:00
+- @ reboot : Au prochain redémarrage
+
+Attention, si l'on précise le jour du mois et le jour de la semaine en même temps, on peut avoir des effets de bord.  
+
