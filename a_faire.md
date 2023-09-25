@@ -1,8 +1,8 @@
 - Systèmes et bases de données
    - systèmes
    - gestion des fichiers
-   - gestion des processus
-   - gestion de la mémoire
+   - ~~gestion des processus~~
+   - ~~gestion de la mémoire~~
    - gestion du stockage
    - administration systèmes
    - scripts
@@ -24,7 +24,7 @@
   - ~~protocoles de différents niveaux~~
   - ~~matériels d’inter-connexion~~
   - ~~architecture~~
-  - CPU
+  - ~~CPU~~
   - mémoire, hiérarchie mémoire
   - ~~périphériques (disques, réseau)~~
   - les différents types d’architectures matérielles (gros systèmes)
