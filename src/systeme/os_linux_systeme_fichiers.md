@@ -3,7 +3,7 @@
 ## Système de fichiers
 
 ### L'arborescence
-Organisation hiérarchique par arborescence unique.
+Organisation hiérarchique par arborescence unique.  
 Nom de fichier : 255 caractères maximum, les noms de fichiers cachés commencent par un "." et les extensions sont indicatives.
 
 Racine de l'arborescence : "/"
@@ -16,8 +16,8 @@ Chemin relatif:
 . -> Répertoire courant
 .. -> Répertoire parent
 
-Chaque utilisateur possède un répertoire personnel situé dans /home qui porte son nom, et qui est le répertoire dans lequel il se trouve par défaut lors de sa connexion
-Ex: Utilisateur Blip a son répertoire dans /home/blip.
+Chaque utilisateur possède un répertoire personnel situé dans /home qui porte son nom, et qui est le répertoire dans lequel il se trouve par défaut lors de sa connexion  
+Ex: Utilisateur Blip a son répertoire dans /home/blip.  
 Le symbole ~ désigne le répertoire personnel de l'utilisateur connecté.
 
 Organisation standard de l'arborescence (Attention, elle peut varier suivant les distributions et machines)
@@ -50,12 +50,12 @@ Chaque fichier possède un inode : c'est un identifiant unique à chaque fichier
 
 ### Les liens symboliques
 
-Comparables aux raccourcis sous Windows, le fichier pointe vers un autre fichier
+Comparables aux raccourcis sous Windows, le fichier pointe vers un autre fichier  
 Si le fichier sur lequel le lien pointe est supprimé, le lien est cassé
 
 ### Les liens physiques
 
-Le fichier pointe directement sur la zone mémoire d'un autre, il y a donc deux fichiers différents pour un même contenu.
+Le fichier pointe directement sur la zone mémoire d'un autre, il y a donc deux fichiers différents pour un même contenu.  
 Le contenu du fichier est supprimé que lorsque tous les liens physiques qui pointent vers lui sont supprimés
 
 ### Informations sur un fichier
@@ -75,19 +75,19 @@ Lorsqu'on liste les fichiers avec ls -l, on peut voir plusieurs informations:
 
 #### Les permissions de base des fichiers
 
-La première lettre correspond au type de fichier
+La première lettre correspond au type de fichier  
 Fichiers classiques:
 - "-": Fichier ordinaire
 - "d": réperotire
-- "l": Lien symbolique
+- "l": Lien symbolique  
 Fichiers spéciaux liés au fonctionnement d'un driver
 - "c": Caractère (Lecture caractère par caractère) (Ex: Driver de lecture du clavier, la lecture se fait caractère par caractère)
-- "b": Block (Lecture block par block (morceaux par morceaux)) (Ex: Lecture d'un fichier sur un disque dur)
+- "b": Block (Lecture block par block (morceaux par morceaux)) (Ex: Lecture d'un fichier sur un disque dur)  
 Fichiers spéciaux liés aux communications entre les processus
 - "p": Tube nommé
 - "s": Socket
 
-Les droits dont définis pour 3 entités: le propriétaire (u), le groupe (g) et les autres (o)
+Les droits dont définis pour 3 entités: le propriétaire (u), le groupe (g) et les autres (o)  
 Jusqu'à 3 droits peuvent être affectés à chaque entité:
 | Droit | Fichier   | Répertoire                   |
 |-------|-----------|------------------------------|
@@ -101,7 +101,7 @@ Le shell donne les droits suivants par défaut aux fichiers et répertoires nouv
 - Fichiers : rw-rw-rw
 - Répertoires: rwxrwxrwx
 
-En plus de ça, l'umask s'applique à tout nouveau fichier ou répertoire **créé ou copié**
+En plus de ça, l'umask s'applique à tout nouveau fichier ou répertoire **créé ou copié**  
 L'application des droits se fait en comparant l'umask et les droits par défauts.
 
 Ex :
@@ -117,7 +117,7 @@ Des droits supplémentaires peuvent être affectés à un fichier ou répertoire
 
 ##### s (SetUID ou SetGID)
 
-Il peut être positionné sur le propriétaire ou le groupe.
+Il peut être positionné sur le propriétaire ou le groupe.  
 Il se superpose au droit x:
 - S = s tout seul
 - s = s + x
@@ -131,15 +131,37 @@ Effets:
 
 ##### t (Sticky bit)
 
-Il est positionné sur les autres (o)
+Il est positionné sur les autres (o)  
 Il se superpose au droit x:
 - T = t tout seul
 - t = t + x
 
 Effets:
 
-Pas d'effet sur les fichiers
+Pas d'effet sur les fichiers  
 Sur un répertoire, les objets contenus à l'intérieur ne peuvent être supprimés ou renommés que par leur propriétaire, le propriétaire du répertoire ou root.
 
-#### Les permissions étendues des fichiers
+#### Les ACL (Access Control List)
+
+Ce sont des droits qui sont positionnés sur un objet (**droits discrétionnaires**)  
+En plus des droits pour le paropriétaire et le groupe, on peut ajouter des droits ciblés pour un utilisateur ou un groupe en plus : La **granularité** est donc augmentée.  
+
+Seuls petits bémols : Le paquet doit être insallé en plus (il n'est pas fourni de base avec les distributions Linuxà, et le système de fichiers doit être compatible.
+
+Les ACL sont découpées en deux parties :
+- Les permissions conventionnelles (propriétaire ACL_USER_OBJ, groupe ACL_GROUP_OBJ, autres ACL_OTHER)
+- Les permissions ACL qui sont des permissions supplémentaires données pour un groupe (ACL_GROUP) ou un utilisateur (ACL_USER).
+
+Les droits restent les mêmes : r, w et x
+
+Un masque doit être précisé dans le cas où l'on ajoute des permissions de type ACL_USER ou ACL_GROUP.  
+Ce masque s'applique aux droits des ACL_USER, ACL_GROUP et **ACL_GROUP_OBJ**.  
+Il s'agit par défaut de la valeur la plus permissive hors propriétaire.
+
+L'héritage des ACL dans un répertoire ne se fait que si il y a présence d'entrées par défaut : DEFAULT_ACL_USER et DEFAULT_ACL_GROUP.
+Attention : **le retrait d'une règle par défaut n'est pas récursif !**
+
+La manipulation des ACL se fait via les commandes setfacl et getfacl (PLus d'infos sur le chapitre des commandes Linux)
+
+
 
