@@ -173,3 +173,29 @@ Ex:
 ```
 
 ```
+
+### getfacl
+Renvoie les permissions ACL d'un objet
+
+Ex:
+```
+
+```
+
+### setfacl
+Manipulation des  ACL
+
+-m : Ajout / modification de règles
+
+Ex:
+```
+
+```
+
+-x : Supprime une règle
+
+Ex:
+```
+
+```
+
