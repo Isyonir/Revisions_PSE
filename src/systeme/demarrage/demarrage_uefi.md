@@ -17,4 +17,4 @@ Le boot loader est ensuite chargé de démarrer le système d'exploitation.
 
 A noter qu'un UEFI peut démarrer en mode CSM (Compatibility Support Module), afin de suivre la séquence de boot d'un BIOS classique dans le cas de l'utilisation d'un vieil OS.
 
-![Image boot uefi](../images/uefi.jpg)
+![Image boot uefi](../../images/uefi.jpg)
