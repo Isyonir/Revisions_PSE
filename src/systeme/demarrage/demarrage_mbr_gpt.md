@@ -14,7 +14,7 @@ L'organisation d'un MBR:
 - Un bootstrap code qui est le code chargé de déterminer quelles partitions sont bootables, de les charger, et de les exécuter.
 - Une table des partitions qui contient les informations sur la manière dont est partitionné le disque. Le MBR ne peut contenir des informations que sur 4 partitions au maximum. 
 
-![Image mbr](../images/mbr.jpg)
+![Image mbr](../../images/mbr.jpg)
 
 Pour augmenter le nombre de partitions possibles, on peut faire ce qu'on appelle des partitions étendues:
 Dans une partition décrite dans le MBR, on va créer des "sous tables de partitions" qui décrivent l'arrangement de "sous-partitions". 
@@ -32,5 +32,5 @@ Structure d'un GPT
 
 A noter qu'il y a un second GPT (incluant le header et la table des partitions) qui est présent à la fin du disque, et ce afin de parer à une éventuelle corruption du premier.
 
-![Image GPT](../images/gpt.jpg)
+![Image GPT](../../images/gpt.jpg)
 
