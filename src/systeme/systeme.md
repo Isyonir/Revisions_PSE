@@ -10,5 +10,5 @@ Certaines spécificités de Linux et de Windows sont abordées dans d'autres cha
 - [Processeur](./processeur.md)
 - [Processus](./processus.md)
 - [Mémoire](./memoire.md)
-- [Démarrage](./demarrage.md)
-- [Systèmes d'exploitation](./os.md)
+- [Démarrage](./demarrage/demarrage.md)
+- [Systèmes d'exploitation](./os/os.md)
