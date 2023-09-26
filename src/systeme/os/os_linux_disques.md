@@ -35,4 +35,4 @@ Pour les pérénniser, on doit modifier le fichier /etc/fstab:
 /dev/sda1 /mnt/disk xfs defaults 1 2
 ```
 
-![Schéma montage](../../os_linux_montage.png)
+![Schéma montage](../../images/os_linux_montage.png)
