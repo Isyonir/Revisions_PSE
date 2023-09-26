@@ -211,7 +211,9 @@ Ex:
 Manipulation des tâches planifiées
 
 -l : Lister les tâches de l'utilisateur courant
+
 -e : Edition des tâches
+
 -r : Suppression de toutes les tâches
 
 Ex: 
@@ -252,10 +254,15 @@ Ex:
 Ajout d'un utilisateur
 
 -u : UID
+
 -g : Groupe principal
+
 -G : Groupe secondaire
+
 -c : Commentaire
+
 -d : Répertoire de connexion
+
 -s : Shell utilisé par l'utilisateur
 
 Ex: 
@@ -267,10 +274,15 @@ Ex:
 Modification d'un utilisateur
 
 -u : UID
+
 -g : Groupe principal
+
 -G : Groupe secondaire
+
 -c : Commentaire
+
 -d : Répertoire de connexion
+
 -s : Shell utilisé par l'utilisateur
 
 Ex: 
@@ -295,3 +307,59 @@ Ex:
 ```
 
 ### id
+Affiche les informations (UID, GID et groupes secondaires) de l'utilisateur
+
+Ex: 
+```
+-(mar sep 26 08:47:21)--(blip:~)-
+[laen] $ id
+uid=668(laen) gid=100(users) groupes=100(users)
+```
+
+### groups
+Affiche la liste des groupes dans lesquels sont l'utilisateur
+
+Ex: 
+```
+-(mar sep 26 08:47:30)--(blip:~)-
+[laen] $ groups
+users
+```
+
+### passwd
+Modifie le mot de passe
+
+Ex: 
+```
+-(mar sep 26 08:47:30)--(blip:~)-
+[laen] $ groups
+users
+```
+
+### chage
+Permet de changer les paramètres d'expiration des mots de passe et comptes utilisateurs
+
+-E : Modifie la date d'expiration du compte d'utilisateur
+
+-m : Modifie le nombre de jours minimum entre deux changements de mot de passe
+
+-M : Modifie le nombre de jours maximum entre deux changements de mot de passe avant expiration
+
+-W : Modifie le nombre de jours avant expiration à partir duquel l'utilisateur est averti de l'expiration de son mot de passe
+
+Ex: 
+```
+
+```
+
+## su
+Changement d'identifiant
+
+\- : Prend les variables d'environnement de l'utilisateur ont on prend l'identifiant
+
+-c : Permet de lancer directement une commande
+
+ Ex: 
+```
+
+```
