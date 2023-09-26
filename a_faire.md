@@ -1,9 +1,9 @@
 - Systèmes et bases de données
    - systèmes
-   - gestion des fichiers
+   - ~~gestion des fichiers~~
    - ~~gestion des processus~~
    - ~~gestion de la mémoire~~
-   - gestion du stockage
+   - ~~gestion du stockage~~
    - administration systèmes
    - scripts
    - virtualisation
