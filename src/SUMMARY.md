@@ -17,6 +17,13 @@
 		- [Différences BIOS/UEFI](./systeme/demarrage/demarrage_bios_uefi.md)
 		- [Différences MBR/GPT](./systeme/demarrage/demarrage_mbr_gpt.md)
 		- [Le PXE](./systeme/demarrage/demarrage_pxe.md)
+  	- [Systèmes d'exploitation](./systeme/os/os.md)
+  		- Linux
+  			- [Système de fichiers et droits](./systeme/os/os_linux_systeme_fichiers.md)
+  			- [Planification des tâches](./systeme/os/os_linux_planification.md)
+ 			- [Gestion des utilisateurs](./systeme/os/os_linux_utilisateurs.md)
+  			- [Gestion des services](./systeme/os/os_linux_services.md)
+  			- [Gestion des disques](./systeme/os/os_linux_disques.md)
 - [Réseau](./reseau/reseau.md)
 	- [Généralités](./reseau/generalites.md)
 	- [Modèle OSI](./reseau/osi.md)
