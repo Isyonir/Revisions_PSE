@@ -2,7 +2,7 @@
 
 Quelques généralités pour les systèmes d'exploitation Windows et Linux
 
-- [Les systèmes de fichiers](./os_systeme_fichiers)
+- [Les systèmes de fichiers](./os_systeme_fichiers.md)
 
 - [Linux]
   - [Système de fichiers et droits]
