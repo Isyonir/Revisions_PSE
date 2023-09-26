@@ -18,3 +18,10 @@ Lors du lancement de l'OS, chaque exécutable est lancé l'un à la suite de l'a
 
 Le rattachement d'un service à un runlevel peut se faire via la commande chkconfig.
 
+Lors de l'extinction de la machine, les services s'arrêtent dans l'ordre inverse de leur démarrage.
+
+### Systemd (nouveau système)
+
+La gestion se fait par la commande systemctl.
+
+Cette fois Linux démarre suivant des "targets", tous les services qui ont une dépendance directe ou indirecte avec cette target sont lancés.
