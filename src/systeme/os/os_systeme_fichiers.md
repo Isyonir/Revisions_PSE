@@ -38,3 +38,21 @@ Référence l'inode de tous les fichiers présents sur le disque, chaque inode c
 Zone dans laquelle se trouvent les données.
 
 ![Schéma systeme de fichiers](../../images/schema_systeme_fichiers.png)
+
+## Quelques exemples de systèmes de fichiers
+
+### Systèmes journalisés
+Ces systèmes enregistrent les modifications dans un journal avant de les effectuer sur les fichiers (un peu comme un WAL postgresql). On peut donc récupérer des modifications qui étaient en cours mais pas enregistrées dans le cas d'une coupure de courant par exemple.
+
+- ext3
+- ext4
+- NTFS
+- xfs
+
+### Systèmes non journalisés
+- FAT 12 16 ou 32
+- exFAT
+- ext et ext2
+
+### Réseau
+- nfs
