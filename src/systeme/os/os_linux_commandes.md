@@ -6,6 +6,7 @@ Quelques commandes utiles sous Linux
 1. [Système de fichiers](#Système-de-fichiers)
 2. [Gestion des tâches planifiées](#Gestion-des-tâches-planifiées)
 3. [Gestion des utilisateurs](#Gestion-des-utilisateurs)
+4. [Gestion des services](#Gestion-des-services)
 
 
 ## Système de fichiers
@@ -359,7 +360,33 @@ Changement d'identifiant
 
 -c : Permet de lancer directement une commande
 
- Ex: 
+Ex: 
+```
+
+```
+
+# Gestion des services
+
+## service
+Gestion des services (ancien système)
+
+Ex: 
+```
+
+```
+
+## chkconfig
+Gestion des services au démarrage
+
+--list : Liste les runlevels pour lesquels le service démarrera
+
+--level : Permet de modifier les runlevels pour lesquels le service démarrera
+
+--add : Active la possibilité de gérer le service par runlevel
+
+--del Désactive la possibilité de gérer le service par runlevel
+
+Ex: 
 ```
 
 ```
