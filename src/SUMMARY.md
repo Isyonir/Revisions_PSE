@@ -4,7 +4,7 @@
   		- [Les registres](./systeme/processeur/processeur_generalites.md)
   	  	- [Assembleur](./systeme/processeur/processeur_assembleur.md)
   	  	- [Modes](./systeme/processeur/processeur_modes.md)
-  	- [Mémoire](./systeme/memoire.md)
+  	- [Mémoire](./systeme/memoire/memoire.md)
   	- [Processus](./systeme/processus/processus.md)
 		- [Généralites](./systeme/processus/processus_generalites.md) 
 		- [Multi-tâche](./systeme/processus/processus_multitache.md)
