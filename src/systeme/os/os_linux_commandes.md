@@ -7,7 +7,7 @@ Quelques commandes utiles sous Linux
 2. [Gestion des tâches planifiées](#Gestion-des-tâches-planifiées)
 3. [Gestion des utilisateurs](#Gestion-des-utilisateurs)
 4. [Gestion des services](#Gestion-des-services)
-
+5. [Gestion des disques](#Gestion-des-disques)
 
 ## Système de fichiers
 
@@ -393,6 +393,78 @@ Ex:
 
 ## systemctl
 Gestion des services (systemd)
+
+Ex: 
+```
+
+```
+
+# Gestion des disques
+
+## lsblk
+Affiche les informations sur les volumes
+
+Ex: 
+```
+-(mar. sept. 26 13:34:34)--(blip:~)-
+[bam] $ lsblk
+NAME                MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+vda                 252:0    0  100G  0 disk
+├─vda1              252:1    0  512M  0 part /boot
+├─vda2              252:2    0  200M  0 part /boot/efi
+└─vda3              252:3    0 99,3G  0 part
+  ├─vg00-lvroot     253:0    0    5G  0 lvm  /
+  ├─vg00-lvswap     253:1    0    4G  0 lvm  [SWAP]
+  ├─vg00-lvvtom     253:2    0    5G  0 lvm  /vtom
+  ├─vg00-lvvarlog   253:3    0   10G  0 lvm  /var/log
+  ├─vg00-lvvar      253:4    0   15G  0 lvm  /var
+  ├─vg00-lvtmp      253:5    0    4G  0 lvm  /tmp
+  ├─vg00-lvproduits 253:6    0    1G  0 lvm  /produits
+  └─vg00-lvapp      253:7    0    5G  0 lvm  /app
+```
+
+## fdisk
+Voir parted (actions appliquées en différé)
+
+Ex: 
+```
+
+```
+
+## parted
+Manipulation des partitions (actions appliquées en **direct**)
+
+Ex: 
+```
+
+```
+
+## mkfs
+Formatage dans un système de fichiers
+
+Ex: 
+```
+
+```
+
+## df
+Informations sur l'espace utilisé 
+
+Ex: 
+```
+
+```
+
+## mount
+Montage d'une partition
+
+Ex: 
+```
+
+```
+
+## umount
+Démontage d'une partition
 
 Ex: 
 ```
