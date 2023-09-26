@@ -19,7 +19,8 @@ On retrouve dans tous les cas:
  - Text: Instructions du programme en mémoire 
 
  Exemple de la structure mémoire d'un processus sur un OS utilisant la segmentation
-![Structure mémoire processus](../images/processus_memoire.png)
+ 
+![Structure mémoire processus](../../images/processus_memoire.png)
  
 Les processus possèdent ce que l'on appelle des "états".
  - Créé
@@ -30,7 +31,7 @@ Les processus possèdent ce que l'on appelle des "états".
  - Terminé: Le passage à l'état terminé se fait soit si le processus a fini de dérouler ses instructions, soit si il a été "kill". Le processus ne s'exécute plus, mais est toujours présent en mémoire (processus zombie) jusqu'à ce que le processus parent l'ait enlevé de la table des processus.
  - Swapped out: Si le processus est en état "En attente" ou "Bloqué", il peut être déplacé dans le swap (partition ou fichier page.sys).
  
-![Etats processus](../images/processus_etats.png)
+![Etats processus](../../images/processus_etats.png)
 
 Un processus zombie est un processus toujours présent en mémoire mais qu ne s'exécute plus.
 L'accumulation de processus zombies peut entraîner une pénurie de RAM, et donc un crash ou un ralentissement du système.
