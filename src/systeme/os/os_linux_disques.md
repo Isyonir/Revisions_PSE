@@ -36,3 +36,35 @@ Pour les pérénniser, on doit modifier le fichier /etc/fstab:
 ```
 
 ![Schéma montage](../../images/os_linux_montage.png)
+
+## Le RAID
+
+Redundant Array of Independent Disks : répartition des données sur plusieurs disques
+
+Plusieurs types de RAID possibles : 
+- Matériel : Un composant physique est affecté à la gestion des opérations, ce qui permet un allègement de la charge système
+- Pseudo-matériel : C'est le contrôleur intégré au disque qui se charge des opérations, moins char qu'un RAID matériel, mais également un peu moins efficace en terme de performances (le contrôleur du disque doit alors s'occuper de l'accès + de la gestion du RAID)
+- Logiciel : Le système d'exploitation se charge de la mise en place du RAID, c'est la méthode la moins onéreuse, cependant elle consomme un certain nombre de ressources du système
+
+Il existe également plusieurs modes de RAID
+
+### RAID 0
+Les données sont réparties sur des disques différents sans parité.  
+L'avantage est une amélioration de la performance (théoriquement on améliore la vitesse d'écriture/lecture d'un facteur égal au nombre de disques présents)  
+Par contre, si un disque est perdu, toutes les données le sont également.
+
+Il est plus utilisé dans le cas où les performances priment sur la sécurité des données
+
+![Schéma RAID 0](../../images/os_raid_0.png)
+
+### RAID 1
+Mirroring : Les données sont copiées sur les deux disques.  
+Si l'un des deux disques est perdu, les données sont conservées, cependant on perd 50% du volume total des disques.  
+Plus le nombre de miroirs est élevé, et plus la sécurité augmente, mais plus son coût devient rédhibitoire.
+
+A noter que la migration d'un RAID 1 vers un RAID 0, 5 ou 6 est facile à mettre en oeuvre, le RAID 1 est donc une bonne solution de départ évolutive.
+
+![Schéma RAID 1](../../images/os_raid_1.png)
+
+### RAID 5
+
