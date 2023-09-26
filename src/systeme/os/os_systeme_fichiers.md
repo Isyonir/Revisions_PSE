@@ -1,5 +1,9 @@
 # Système de fichiers
 
+Il ne faut pas confondre:
+- Le système de fichiers d'un système d'exploitation qui correspond plus à la hiérarchisation des répertoires (Voir ![Système de fichiers Linux](./os_linux_systeme_fichiers.md))
+- Le système de fichiers d'une partition : Ce qui est décrit sur cette page
+
 Un système de fichiers est une façon de stocker des informations et de les organiser dans des fichiers sur une mémoire secondaire (disque dur, SSD, clé USB).  
 
 Il assure un certain nombre de rôles:
