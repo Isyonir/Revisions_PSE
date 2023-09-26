@@ -68,3 +68,8 @@ A noter que la migration d'un RAID 1 vers un RAID 0, 5 ou 6 est facile à mettre
 
 ### RAID 5
 
+![Schéma RAID 5](../../images/os_raid_5.png)
+
+### RAID 6
+
+![Schéma RAID 6](../../images/os_raid_6.png)
