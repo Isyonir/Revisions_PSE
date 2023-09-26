@@ -2,6 +2,8 @@
 
 Quelques généralités pour les systèmes d'exploitation Windows et Linux
 
+- [Les systèmes de fichiers](./os_systeme_fichiers)
+
 - [Linux]
   - [Système de fichiers et droits]
   - [Planification des tâches]
