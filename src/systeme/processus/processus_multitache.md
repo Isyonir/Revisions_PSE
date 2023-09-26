@@ -5,7 +5,7 @@ Un coeur de processeur n'est capable que d'effectuer des opérations de manière
 
 Pour donner l'illusion d'une exécution de plusieurs processus en parallèle sur un seul coeur, chaque processus s'exécute pendant un court temps avant de laisser la place à un autre.
 
-![Image concurrence](../images/concurrence.png)
+![Image concurrence](../../images/concurrence.png)
 
 A chaque fois que l'on change de processus en cours d'exécution, il y a un "context switch": les données du processus en cours (état des registres du processeur) sont sauvegardées et celles du nouveau processus à exécuter sont chargées.
 
@@ -46,18 +46,18 @@ Ce système garantit que chaque processus aura du temps d'exécution
 
 Dans le cas d'un ordinateur à plusieur coeurs, chaque coeur peut exécuter un processus.
 
-![Parallélisation](../images/parallélisation.png)
+![Parallélisation](../../images/parallélisation.png)
 
 La concurrence et la parallélisation peuvent être combinées.
 Dans ce cas, chaque coeur exécute de manière concurrente des processus.
 
-![Concurrence + parallélisation](../images/concurrence_parallelisation.png)
+![Concurrence + parallélisation](../../images/concurrence_parallelisation.png)
 
 ## Le parallélisme
 
 Les instructions d'un processus sont séparées et exécutées sur plusieurs coeurs en même temps.
 
-![Parallélisme](../images/parallellisme.png)
+![Parallélisme](../../images/parallellisme.png)
 
 ## Les threads
 
@@ -70,4 +70,4 @@ Le context switch ente deux threads d'un même processus est bien plus léger qu
 
 Comme les threads d'un processus partagent leur mémoire si l'un d'entre eux corrompt celle-ci, le processus en entier peut crasher.
 
-![Thread](../images/thread.png)
+![Thread](../../images/thread.png)
