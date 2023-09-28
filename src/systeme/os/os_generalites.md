@@ -6,10 +6,18 @@ Un système d'exploitation est un ensemble de programmes qui servent d'interface
 Le rôle de l'OS est de gérer les demandes d'accès au matériel qui sont faites par les différents programmes.  
 
 Il gère notemment :
+- Le dialogue homme/machine
+- La gestion des fichiers
+- La gestion des entrées/sorties
+- La gestion de la mémoire
+- La gestion des tâches (processus)
+- La gestion du matériel
 
-### Le noyau
+### Gestion du matériel
 
-C'est le composant qui permet de faire l'interface entre le matériel et le logiciel.  
+La gestion du matériel est faite par le noyau par l'intermédiaire des pilotes (drivers).  
 
+### Gestion des tâches
 
+La gestion des processus se fait notemment par l'ordonnanceur (scheduler)
 
