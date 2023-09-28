@@ -33,12 +33,12 @@ frontend main
 # static backend for serving up images, stylesheets and such
 #---------------------------------------------------------------------
 backend bk_1
-    balance     roundrobin
-    server      node1 192.168.0.10:80 check
-    server		  node2 192.168.0.11:80 check
+  balance  roundrobin
+  server  node1 192.168.0.10:80 check
+  server  node2 192.168.0.11:80 check
 
 backend bk_2
-    server		node1 192.168.0.15:80 check
+  server  node1 192.168.0.15:80 check
 ```
 Dans la configuration frontend main, le Haproxy écoute quelque soit l'adresse IP, mais uniquement sur le port 80.
 La configuration fait attention au domaine de destination, si au souhaite accéder au site.test alors on est dans la rule1, si on souhaite accéder au site supervision.test 
