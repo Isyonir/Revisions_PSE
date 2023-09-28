@@ -18,6 +18,29 @@
 | Mémoire secondaire | Dans les To                                          | HDD : Jusqu'à 200 Mo/s, SSD : Jusqu'à 5 Go/s               |
 | Mémoire tertiaire  | De 10 à 500 To                                       | 160 à 400 Mo/s                                             |
 
+## L'accès à la mémoire
+
+L'accès à la mémoire se fait via les bus :
+- le bus système permet au processeur de communiquer avec les différents périphériques
+- le bus d'adresse est celui dans lequel sera spécifié l'adresse mémoire qui doit être chargée ou écrite
+- le bus de données est celui par lequel les données transitent
+
+![Schéma bus](../../images/memoire_bus.png)
+
+### Le MMU
+Memory Management Unit
+
+Composant présent en général dans le processeur, c'est lui qui est en charge de "traduire" les adresses mémoire virtuelles en adresses réelles.  
+
+![Schéma MMU](../../images/materiel_mmu.png)
+
+### Le DMA
+Direct Memory Access
+
+Permet à un périphérique d'accéder directement à la mémoire primaire (RAM) sans passer par le processeur.  
+Cele permet d'éviter de surcharger le processeur.
+
+
 ## Mémoire virtuelle
 
 La mémoire virtuelle permet de faire abstraction du matériel.
