@@ -1,7 +1,7 @@
 # Load Balancer
 
-Un load balancer ou répartiteur de charger permet , comme son nom l'indique, de répartir un flux vers un serveur.
-Ainsi plusieurs serveurs webs peuvent fonctionner en parallèle pour permettre un plus grand nombre d'accès simultané.
+Un load balancer ou répartiteur de charger permet , comme son nom l'indique, de répartir des connexions vers plusieurs serveurs.
+Ainsi plusieurs serveurs web peuvent fonctionner en parallèle pour permettre un plus grand nombre d'accès simultané.
 
 Un loadbalancer possède plusieurs modes de fonctionnement : 
   - Round robin : les connexions sont dirigés vers les serveurs les uns à la suite des autres.
