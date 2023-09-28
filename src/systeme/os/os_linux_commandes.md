@@ -55,37 +55,22 @@ Lister le contenu d'un répertoire
 
 Ex:
 ```
--(ven sep 22 10:04:31)--(z4bpadm3:~/CQH)-
-[g2a] $ ls
-afe     fno     hyposcan  mistral  receptionR.pl      SNat20230620.log  swi
-bambou  fno_zp  icm       noemie   retourFormuels.pl  snatLog.tar.gz    toa
-ensap   gold    khq       par      r-odl              sshp
+
 ```
 Lister tous les fichiers sous forme de liste du plus ancien au plus récent
 ```
--(ven sep 22 10:09:54)--(z4bpadm3:~/CQH)-
-[g2a] $ ls -ltr
-total 108
--rwxr-xr-x  1 g2a users 11216 jui 12  2017 sshp
-drwxr-xr-x  2 g2a users  4096 déc  5  2022 afe
-drwxr-xr-x  2 g2a users  4096 déc  6  2022 r-odl
-drwxr-xr-x  2 g2a users  4096 jan 20  2023 swi
-drwxr-xr-x  2 g2a users  4096 avr  2 03:00 khq
-drwxr-xr-x  2 g2a users  4096 mai  6 03:00 noemie
-drwxr-xr-x  2 g2a users  4096 jun 19 03:00 icm
--rw-r--r--  1 g2a users  2109 jun 19 09:12 snatLog.tar.gz
--rw-r--r--  1 g2a users 12625 jun 20 15:01 SNat20230620.log
-drwxr-xr-x  4 g2a users  4096 jun 21 13:38 toa
--rw-r--r--  1 g2a users  1307 jun 27 12:32 receptionR.pl
--rw-r--r--  1 g2a users  2213 jun 27 13:48 retourFormuels.pl
-drwxr-xr-x  2 g2a users  4096 jui  5 16:05 hyposcan
-drwxr-xr-x  4 g2a users  4096 jui 28 10:58 par
-drwxr-xr-x  2 g2a users  4096 aoû 31 10:20 gold
-drwxr-xr-x 13 g2a users  4096 sep  7 10:24 ensap
-drwxr-xr-x  2 g2a users 12288 sep  7 10:57 fno
-drwxr-xr-x  2 g2a users  4096 sep 11 13:58 bambou
-drwxr-xr-x  2 g2a users  4096 sep 20 09:32 fno_zp
-drwxr-xr-x  3 g2a users  4096 sep 21 14:05 mistral
+
+```
+
+### du
+Permet de récupérer la taille d'un répertoire
+
+-s : Ne récupère que la taille du répertoire
+-h : Affiche avec une taille lisible pour un humain (en Mo, Go, ou To)
+
+Ex:
+```
+
 ```
 
 ### cp
