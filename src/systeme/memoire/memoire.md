@@ -1,5 +1,23 @@
 # La mémoire
 
+## Hiérarchie de la mémoire
+
+![Schéma hiérarchie mémoire](../../images/memoire_hierarchie.png)
+
+- Les registres : Mémoire utilisée par le processeur pour effectuer ses opérations
+- Mémoire cache : Mémoire intermédiaire entre la RAM et les registres, en général elle permet de stocker les données dont les registres vont avoir besoin.
+- Mémoire centrale : Aussi appelée mémoire primaire, il s'agit de la RAM, elle contient en mémoire les données essentielles à l'exécution de différents processus de la machine
+- Mémoire secondaire : Elle correspond au stockage de masse couremment utilisé : Disque dur ou SSD
+- Mémoire tertiaire : Stockage utilisé pour l'archivage  : Bande magnétiques
+
+| Type de mémoire    | Taille                                               | Vitesse d'accès                                            |
+|--------------------|------------------------------------------------------|------------------------------------------------------------|
+| Registres          | 8 octets par registre (16 pour certains)             | 1 cycle de CPU                                             |
+| Mémoire cache      | L0 : 6Ko, L1 : 128ko, L2 : 1Mo, L3 : 6Mo, L4 : 128Mo | L1 : 700Go/s, L2 : 200Go/s, L3 : 100Go/s, L4 : 40 Go/s     |
+| Mémoire primaire   | Dans les Go                                          | DDR3 : 10Go/s, DDR4 : 20 à 30 Go/s, DDR5 : Jusqu'à 50 Go/s |
+| Mémoire secondaire | Dans les To                                          | HDD : Jusqu'à 200 Mo/s, SSD : Jusqu'à 5 Go/s               |
+| Mémoire tertiaire  | De 10 à 500 To                                       | 160 à 400 Mo/s                                             |
+
 ## Mémoire virtuelle
 
 La mémoire virtuelle permet de faire abstraction du matériel.
