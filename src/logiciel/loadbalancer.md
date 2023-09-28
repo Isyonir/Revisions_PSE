@@ -18,7 +18,7 @@ Haproxy est une solution disponible sous linux capable d'occuper le rôle de loa
 
 Voici un exemple de fichier de configuration 
 
-'
+```
 #---------------------------------------------------------------------
 # main frontend which proxys to the backends
 #---------------------------------------------------------------------
@@ -39,8 +39,7 @@ backend bk_1
 
 backend bk_2
     server		node1 192.168.0.15:80 check
-'
-
+```
 Dans la configuration frontend main, le Haproxy écoute quelque soit l'adresse IP, mais uniquement sur le port 80.
 La configuration fait attention au domaine de destination, si au souhaite accéder au site.test alors on est dans la rule1, si on souhaite accéder au site supervision.test 
 on est dans la rule2. 
