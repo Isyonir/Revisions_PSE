@@ -67,9 +67,16 @@ A noter que la migration d'un RAID 1 vers un RAID 0, 5 ou 6 est facile à mettre
 ![Schéma RAID 1](../../images/os_raid_1.png)
 
 ### RAID 5
+Le raid 5 combine la méthode de volume agrégé par bandes comme le raid 0 et ajoute une parité, elle est incluse à chaque écriture et est répartie circulairement sur les différents disques.
+Chaque bande est composée de N-1 blocs de données et d'un bloc de parité.
+
+En cas de panne d'un disque, il manque soit une partie de données, soit le bloc de parité (ce qui est moins grave). Il est possible de reconstruire les données à partir des données restante et du bloc de parité.
+La tolérance à la panne est d'un seul disque. 
 
 ![Schéma RAID 5](../../images/os_raid_5.png)
 
 ### RAID 6
-
+Le raid 6 est une évolution du raid 5 avec deux blocs de parité.
+Cette solution est plus lente car il demande au système de calculer deux blocs de parité pour chaque données. 
+Cependant, ce raid est plus sécurisé car il permet la perte de deux disques.
 ![Schéma RAID 6](../../images/os_raid_6.png)
