@@ -79,4 +79,5 @@ La tolérance à la panne est d'un seul disque.
 Le raid 6 est une évolution du raid 5 avec deux blocs de parité.
 Cette solution est plus lente car il demande au système de calculer deux blocs de parité pour chaque données. 
 Cependant, ce raid est plus sécurisé car il permet la perte de deux disques.
+
 ![Schéma RAID 6](../../images/os_raid_6.png)
