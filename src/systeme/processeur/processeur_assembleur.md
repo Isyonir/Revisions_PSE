@@ -32,7 +32,7 @@ Pour éviter de perdre la valeur de RAX (et donc de x), on copie la valeur dans 
 Les objets étant des structures qui peuvent être grandes, leurs données ne rentrent pas en entier dans un registre.
 Dans ce cas, le registre contiendra l'adresse mémoire des données de l'objet.
 L'instruction lea (load effective address) charge dans le registre edx l'adresse contenue dans esp (le stack pointer) + 16 (décalage de 16).
-Les valeurs utilisées dans cet exemple sont arbitraires (on aurait pu prendre ebx à la place de edx, et eax + 54456 à la place de esp + 16)
+Les valeurs utilisées dans cet exemple sont arbitraires.
 
 
 
