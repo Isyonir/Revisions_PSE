@@ -9,7 +9,7 @@ Un loadbalancer possède plusieurs modes de fonctionnement :
   - source : le serveur de destination dépend de l'adresse IP source.
   - URI : le serveur destination dépend de l'URI de la ressource demandée.
   - hdr : le serveur de destination dépend du contenu du header HTTP
-  - first : pour les VM à temps de vie court, tout le traffi est envoyé sur le plus petit nombre de machines disponibles, ce qui permet d'éteindre les autres.
+  - first : pour les VM à temps de vie court, tout le traffic est envoyé sur le plus petit nombre de machines disponibles, ce qui permet d'éteindre les autres.
 
     
 ### Haproxy
