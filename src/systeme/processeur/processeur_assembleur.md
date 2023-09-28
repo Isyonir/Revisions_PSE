@@ -47,7 +47,7 @@ Pour une donnée de 4 octets dont la valeur est : 0x0A0B0C0D
                                                    |     |
                                                    |     |
                       Octet de poids fort ---------+     |
-Octet de poids faible ---------------+
+                    Octet de poids faible ---------------+
 
 | Adresse en mémoire | 0x01 | 0x02 | 0x03 | 0x04 |
 |--------------------|------|------|------|------|
