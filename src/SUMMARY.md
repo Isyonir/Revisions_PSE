@@ -18,6 +18,8 @@
 		- [Différences MBR/GPT](./systeme/demarrage/demarrage_mbr_gpt.md)
 		- [Le PXE](./systeme/demarrage/demarrage_pxe.md)
   	- [Systèmes d'exploitation](./systeme/os/os.md)
+  		- [Généralités](./systeme/os/os_generalites.md)
+  	 	- [Système de fichiers](././systeme/os/os_systeme_fichiers.md)
   		- Linux
   			- [Système de fichiers et droits](./systeme/os/os_linux_systeme_fichiers.md)
   			- [Planification des tâches](./systeme/os/os_linux_planification.md)
