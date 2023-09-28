@@ -35,7 +35,7 @@
 	- [Couche 4 : Transport](./reseau/transport.md)
  	- [Couche 7 : Application](./reseau/application.md)
 - Logiciels
-  	- [Architecture logicielle](./logiciel/architecture_logicielle.md)
-     	- [Haute disponibilité](./logicl/haute_dispo.md)
+	- [Architecture logicielle](./logiciel/architecture_logicielle.md)
+	- [Haute disponibilité](./logicel/haute_dispo.md)
 	- [Load balancing](./logiciel/loadbalancing.md)
- 	- [Métrologie et supervision](./logiciemetrologie.md) 
+	- [Métrologie et supervision](./logiciel/metrologie.md) 
