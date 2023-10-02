@@ -38,4 +38,6 @@
 	- [Architecture logicielle](./logiciel/architecture_logicielle.md)
 	- [Haute disponibilité](./logicel/haute_dispo.md)
 	- [Load balancing](./logiciel/loadbalancing.md)
-	- [Métrologie et supervision](./logiciel/metrologie.md) 
+	- [Métrologie et supervision](./logiciel/metrologie.md)
+	- [Sauvegarde](./logiciel/Sauvegarde.md)
+	- [PXE](./logiciel/pxe.md)
