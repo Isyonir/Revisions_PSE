@@ -1,12 +1,12 @@
 # Couche 1 : Physique
-### Principe
+## Principe
 
 La couche physique correspond au support de transmission et les connecteur, le signal peut ête porté via
 - Un cable de cuivre (ethernet, RTC)
 - Une fibre optique
 - Des ondes (radio, wifi, bluetooth...)
 
-#### Le cuivre 
+### Le cuivre 
 Le câble de cuivre possède un nommage selon son blindage ou la forme de ses paires 
 Exemple : F/UTP
 F: Foil Shielded ,câble protégé avec un feuillard.
@@ -26,7 +26,7 @@ Les paires peuvent être :
 La paire peut être torsadée (TP) ou non (rien).
 
 
-#### La fibre
+### La fibre
 Une fibre optique est un fil dont l’âme, très fine et faite de verre ou de plastique, a la propriété de conduire la lumière.
 Elle possède de nombreux avantages face au câble de cuivre.
   - Elle est insensible aux perturbations électromagnétiques.
@@ -37,7 +37,7 @@ La fibre est plus évolutive et sécurisé que le cuivre.
 
 Il existe plusieurs types de fibre , monomode et multimodes.
 
-### Le WIFI
+## Le WIFI
 Le WIFI utilise des ondes de 2,4Ghz , 5Ghz ou 6Ghz (WIFI 6E) pour transmettre des informations sans fil.
 
 - Le PC tente de se connecter au réseau sans fil (SSID) diffusé par la borne.
