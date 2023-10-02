@@ -20,7 +20,7 @@
   	- [Systèmes d'exploitation](./systeme/os/os.md)
   		- [Généralités](./systeme/os/os_generalites.md)
   	 	- [Système de fichiers](././systeme/os/os_systeme_fichiers.md)
-  		- [Linux]
+  		- [Linux]()
   			- [Système de fichiers et droits](./systeme/os/os_linux_systeme_fichiers.md)
   			- [Planification des tâches](./systeme/os/os_linux_planification.md)
  			- [Gestion des utilisateurs](./systeme/os/os_linux_utilisateurs.md)
@@ -34,7 +34,7 @@
  	- [Couche 3 : Réseau](./reseau/reseau.md)
 	- [Couche 4 : Transport](./reseau/transport.md)
  	- [Couche 7 : Application](./reseau/application.md)
-- [Logiciels]
+- [Logiciels]()
 	- [Architecture logicielle](./logiciel/architecture_logicielle.md)
 	- [Haute disponibilité](./logicel/haute_dispo.md)
 	- [Load balancing](./logiciel/loadbalancing.md)
