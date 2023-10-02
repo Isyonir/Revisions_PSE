@@ -19,7 +19,7 @@ Un périphérique est un dispositif connecté à un ordinateur qui permet d'éte
 On distingue trois types de périphériques:
 - Périphériques d'entrée (Ex: souris, clavier, webcam, micro , ...)
 - Périphériques de sortie (Ex: écran, imprimante, ...)
-- Périphériques de stockage (Ex: disque dur, ssd)
+- Périphériques de stockage (Ex: disque dur, SSD)
 
 Chaque périphérique possède un contrôleur, c'est le composant qui permet de piloter le périphérique en lui envoyant des instructions.  
 
@@ -49,11 +49,11 @@ Il garde en mémoire la liste des emplacements mémoire utilisés et libres.
 Il s'occupe également de la gestion de la sécurité de la mémoire : Il réserve à chaque programme un espace d'adressage que lui seul peut manipuler.  
 Toute tentative d'accès de la part d'un autre processus provoque l'arrêt immédiat du processus qui a tenté l'accès.
 
-C'est également l'os qui gère la pagination de la mémoire
+C'est également l'OS qui gère la pagination de la mémoire
 
 ### Gestion des fichiers
 
-L'os implémente un système de fichiers qui permet de stocker et manipuler ces derniers.
+L'OS implémente un système de fichiers qui permet de stocker et manipuler ces derniers.
 
 ### Gestion du réseau
 
