@@ -11,7 +11,7 @@ Quelques généralités pour les systèmes d'exploitation Windows et Linux
   - [Gestion des utilisateurs](./os_linux_utilisateurs.md)
   - [Gestion des services](./os_linux_services.md)
   - [Gestion des disques](./os_linux_disques.md)
-  - [Gestion réseau]
+  - [Gestion réseau](./os_linux_reseau.md)
   - [Commandes utiles]
 - [Windows]
   - [Système de fichiers et droits]
