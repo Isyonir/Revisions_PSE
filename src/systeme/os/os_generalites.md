@@ -27,10 +27,38 @@ Le système d'exploitation a deux missions :
 - Suivre l'état d'utilisation (libre ou réservé) des périphériques, et attribuer leur accès aux processus qui en ont besoin
 - Le pilotage du périphérique via les pilotes (drivers) et le contrôleur.
 
-
-
+Le pilotage du périphérique via le contrôleur peut se faire de deux manières:
+- Programmed I/O: Le processeur envoie une demande au contrôleur, puis vérifie de temps en temps l'état de celui-ci pour savoir si l'opération est terminée
+- Interrupt driven I/O : Le processeur envoie une demande au contrôleur, puis passe à l'exécution des autres processus. Lorsque l'opération est teminée, le contrôleur envoie une interruption. Le processeur interrompt ses activités sur les autres processus, et passe au traitement des résultats.
 
 ### Gestion des tâches
 
-La gestion des processus se fait notemment par l'ordonnanceur (scheduler)
+Le système d'exploitation s'occupe de créer, d'interrompre et de supprimer les processus.  
+Pour ça il doit : 
+- Réservier la mémoire
+- Planifier l'exécution (ordonnancement)
+- S'occuper des interblocages (il gère l'octroi des ressources suivant les disponibilités de cs dernières)
+- Assurer les communications entre les processus
+
+### Gestion de la mémoire
+
+Le système d'exploitation dirige l'utilisation de la mémoire, c'est lui qui réserve les emplacements lorsqu'un processus le demande et qui les libère lorsque le processus n'en a plus besoin (Ex : Arrêt)  
+
+Il garde en mémoire la liste des emplacements mémoire utilisés et libres.
+
+Il s'occupe également de la gestion de la sécurité de la mémoire : Il réserve à chaque programme un espace d'adressage que lui seul peut manipuler.  
+Toute tentative d'accès de la part d'un autre processus provoque l'arrêt immédiat du processus qui a tenté l'accès.
+
+C'est également l'os qui gère la pagination de la mémoire
+
+### Gestion des fichiers
+
+L'os implémente un système de fichiers qui permet de stocker et manipuler ces derniers.
+
+### Gestion du réseau
+
+L'OS se charge de gérer les couches 1 à 4 du modèle OSI:
+- Couches 1 et 2: C'est l'OS via le pilote qui demande au périphérique réseau de se charger de la traduction (signal vers données)
+- Couches 3 et 4: Ce sont divers programmes présents dans l'OS qui se chargent du découpage en trames.
+
 
