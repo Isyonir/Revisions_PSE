@@ -15,7 +15,20 @@ Il gère notemment :
 
 ### Gestion du matériel
 
-La gestion du matériel est faite par le noyau par l'intermédiaire des pilotes (drivers).  
+Un périphérique est un dispositif connecté à un ordinateur qui permet d'étendre ses fonctionnalités.  
+On distingue trois types de périphériques:
+- Périphériques d'entrée (Ex: souris, clavier, webcam, micro , ...)
+- Périphériques de sortie (Ex: écran, imprimante, ...)
+- Périphériques de stockage (Ex: disque dur, ssd)
+
+Chaque périphérique possède un contrôleur, c'est le composant qui permet de piloter le périphérique en lui envoyant des instructions.  
+
+Le système d'exploitation a deux missions : 
+- Suivre l'état d'utilisation (libre ou réservé) des périphériques, et attribuer leur accès aux processus qui en ont besoin
+- Le pilotage du périphérique via les pilotes (drivers) et le contrôleur.
+
+
+
 
 ### Gestion des tâches
 
