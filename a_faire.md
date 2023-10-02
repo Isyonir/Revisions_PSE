@@ -1,5 +1,5 @@
 - Systèmes et bases de données
-   - systèmes
+   - ~~systèmes~~
    - ~~gestion des fichiers~~
    - ~~gestion des processus~~
    - ~~gestion de la mémoire~~
@@ -7,7 +7,7 @@
    - administration systèmes
    - scripts
    - virtualisation
-   - gestion des ressources logicielles
+   - ~~gestion des ressources logicielles~~
    - sécurité
    - installation et configuration d'un système
    - bases de données
@@ -25,7 +25,7 @@
   - ~~matériels d’inter-connexion~~
   - ~~architecture~~
   - ~~CPU~~
-  - mémoire, hiérarchie mémoire
+  - ~~mémoire, hiérarchie mémoire~~
   - ~~périphériques (disques, réseau)~~
   - les différents types d’architectures matérielles (gros systèmes)
  
