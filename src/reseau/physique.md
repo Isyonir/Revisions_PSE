@@ -24,7 +24,15 @@ Les paires peuvent être :
   - Avec feuillard (F)
 
 La paire peut être torsadée (TP) ou non (rien).
+#### Les classes de câbles.
 
+| Catégorie | Debit max                          | Notes                |
+|-----------|------------------------------------|----------------------|
+| CAT5      | 100Mb/s sur 100m                   | Abandonné pour le 5e |
+| CAT5e     | 2,5Gb/s sur 100m et 10Gb/s sur 30m | Le plus courant      |
+| CAT6      | 5Gb/s sur 100m et 10Gb/s sur 55m   | Coeur de réseau      |
+| CAT6a     | 10Gb/s sur 100m                    | Datacenter           |
+| CAT7      | 40Gb/s sur 500m et 100Gb/s sur 15m |                      |
 
 ### La fibre
 Une fibre optique est un fil dont l’âme, très fine et faite de verre ou de plastique, a la propriété de conduire la lumière.
