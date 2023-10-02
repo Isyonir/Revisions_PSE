@@ -61,4 +61,4 @@ L'OS se charge de gérer les couches 1 à 4 du modèle OSI:
 - Couches 1 et 2: C'est l'OS via le pilote qui demande au périphérique réseau de se charger de la traduction (signal vers données)
 - Couches 3 et 4: Ce sont divers programmes présents dans l'OS qui se chargent du découpage en trames.
 
-
+![Schéma OS](../../images/os_schema.png)
