@@ -12,7 +12,7 @@ Pour que le PXE fonctionne, il faut un serveur DHCP. Lorsqu'un ordinateur démar
 une adresse IP ainsi que la configuration du réseau, notamment l'adresse du serveur PXE. L'ordinateur va envoyer au serveur PXE une demande de boot PXE, le serveur répond en 
 fournissant les fichiers necessaires pour le démarrage du système.
 
-![Boot PXE](https://doc.fedora-fr.org/w/images/3/38/D%C3%A9marrage-PXE.png)
+![Démarrage-PXE](https://github.com/Isyonir/Revisions_PSE/assets/143949453/5e0653dc-07a2-469d-9a05-b4baa8b4d5ed)
 
 
 L'image envoyée par le serveur PXE peut correspondre à un système d'exploitation ou à un environnement de démarrage tel que WinPE qui est l'environnement de pré-installation de 
