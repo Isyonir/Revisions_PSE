@@ -30,7 +30,7 @@ Pour les pérénniser, on doit modifier le fichier /etc/fstab:
     |         |      .--------------------- Système de fichiers
     |         |      |     .--------------- Options de montage supplémentaires
     |         |      |     |     .--------- Dump du système de fichier , 1 = oui , 0 = non
-    |         |      |     |     | .------- Ordre de vérification du système de fichiers lots du boot
+    |         |      |     |     | .------- Ordre de vérification du système de fichiers lors du boot
     |         |      |     |     | |
 /dev/sda1 /mnt/disk xfs defaults 1 2
 ```
