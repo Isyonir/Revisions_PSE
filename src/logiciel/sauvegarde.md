@@ -9,7 +9,7 @@ Il éxiste plusieurs types de sauvegardes :
   - Différencielle : Une sauvegarde qui inclut tous les fichiers modifiés depuis le lancement de la dernière sauvegarde complète (Full).
   - Incrementale : Une sauvegarde qui inclut tous les fichiers modifiés depuis le lancement de la dernière sauvegarde complète (Full), différentielle, ou incrémentale.
 
-Sur linux il existe plusieurs logiciels pour faire de la sauvegarde : 
+Sur linux il existe plusieurs logiciels pour faire de la sauvegarde, voici quelques exemples :  
 
 ## RSYNC 
 
