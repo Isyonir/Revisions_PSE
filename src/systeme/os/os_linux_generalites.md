@@ -18,17 +18,21 @@ Une distribution comprend :
 - un environnement graphique (KDE, GNOME, XFCE)
 - un serveur de son (PulseAudio, PipeWire)
 
-La pluspart des applications fournies dans une distribution sont gratuites et open-source, cependant, certains drivers inclus peuvent être propriétaires.
-
-
+La plupart des applications fournies dans une distribution sont gratuites et open-source, cependant, certains drivers inclus peuvent être propriétaires.
 
 Quelques exemples:
 - Bureautique : Fedora, Ubuntu
 - Entreprise : RedHat
 - Sécurité : Kali Linux
 
-Les distributions
-Logiciel libre
+## Le noyau Linux
+
+Il a été créé en 1991 par Linus Torvalds.
+
+Le noyau Linux est gratuit et open source, il est monolithique, modulaire et multi-tâche
+
+
+
 Le noyau
 inittab init.d
 Environnements graphiques
