@@ -1,6 +1,32 @@
 # Linux
 
-## Planification des tâches
+## Planification des tâches avec "at"
+Il est possible de planifier une commande pour qu'elle s'exécute une seule fois à un instant T grâce à la commande at 
+
+```
+at [OPTION...] heure/date
+```
+Une fois la commande lancée, elle exécute son shell ou il faut renseigner la commande à lancer puis quitter avec CTRL + D 
+
+Il est possible de renseigner les formats de temps sous les formats suivants : 
+- Une heure spécifique de la journée : On peut préciser le temps sous le format HH:MM. Si l’heure spécifiée est déjà passée, alors la tâche est exécutée le lendemain à la même heure
+- Un indicateur de temps : il existe des mots-clés reconnus qui peuvent être utilisés pour désigner l’heure comme noon (12:00), midnight (00:00), ou teatime (16:00)
+- Un jour spécifique : pour planifier une tâche spécifique à plus de 24H, il faut ajouter une date sous la forme MMDDYY, MM/DD/YY, ou DD.MM.YY.
+- Une période spécifique dans un futur proche : Il est possible de préciser la période avec les mots-clés now, ou le signe + suivi de la période.
+
+Il est possible de lister les tâches en attente avec la commande 
+```
+atq
+at -l
+```
+
+Pour supprimer une tache il faut exécuter la commande 
+```
+atrm <id_de_la_tache>
+```
+L'ID s'obtient en listant les tâches.
+
+## Planification des tâches avec Crontab
 
 Pour planifier des tâches, on utilise l'utilitaire crond.  
 Les tâches planifiées sont placées dans le dossier /etc/cron.d/ pour les tâches système et /var/spool/cron pour les tâches créés par la commande crontab.
