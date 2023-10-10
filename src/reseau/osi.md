@@ -4,7 +4,7 @@
 Le modèle OSI (Open Systems Interconnection) est un modèle conceptuel qui caractérise et standardise les fonctions de communication d'un système de communication.
 Le but est d'éviter le blocage des systèmes « propriétaires », de fournir un cadre général à respecter pour les intervenants dans le monde du réseau et de fournir des normes techniques.
 
-Le modèle sépare le flux de données en sept couches, de l'implémentation physique et de la transmissions de bits à travers un médium de communication, 
+Le modèle sépare le flux de données en sept couches, de l'implémentation physique et de la transmission de bits à travers un médium de communication.
 
 
 ![schema OSI](../images/schema_osi.png)
