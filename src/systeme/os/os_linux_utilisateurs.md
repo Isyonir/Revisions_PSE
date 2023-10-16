@@ -85,5 +85,15 @@ Ce fichier est éditable via la commande visudo.
 identifiant	ALL = (user) /chemin/complet/commande,/chemin/complet/autrecommande
 ```
 
+## Astuce : changement de mot de passe root 
 
+On peut modifier le mot de pase de root, même sans le connaître en faisant la manipulation suivante (uniquement valable su GRUB est installé):
 
+- Démarrer la machine
+- Lors du démarrage de GRUB, appuyer sur "e" our entrer en mode édition
+- Scroller jusqu'à la ligne commençant par "linux", à la fin de la ligne remplacer "ro quiet" par "rw quiet", puis ajouter "init=/bin/bash" à la fin de la ligne
+- Appuyer sur F10 pour passer sur un shell
+- Remonter le système de fichiers en mode écriture : "mount -n -o remount,rw /"
+- Changer le mot de passe root : passwd root
+
+[Reset mot de passe root](../../images/os_linux_reset_passwd.png)
