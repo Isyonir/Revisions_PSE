@@ -13,6 +13,8 @@ Dans le développement logiciel, les pratiques Agile incluent :
 - des réponses flexibles aux changement de besoins,
 - une capacité et une compréhension des problèmes à résoudre.
 
+![image](https://github.com/Isyonir/Revisions_PSE/assets/143949453/2b840dc7-878e-4ff6-aa0d-a93232e1f2c2)
+
 
 ## Le DevOps
 
