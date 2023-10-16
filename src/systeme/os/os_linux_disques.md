@@ -90,3 +90,5 @@ La gestion logicielle des RAID se fait via la commande "mdadm"
 
 ![Schéma mdadm](../../images/os_raid_mdadm.png)
 
+## Les LVM
+
