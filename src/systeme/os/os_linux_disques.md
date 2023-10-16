@@ -81,3 +81,12 @@ Cette solution est plus lente car il demande au système de calculer deux blocs 
 Cependant, ce raid est plus sécurisé car il permet la perte de deux disques.
 
 ![Schéma RAID 6](../../images/os_raid_6.png)
+
+Tous ces différents RAID peuvent être combinés : Ex RAID 16 = Quatre RAID 1 sous un RAID 6
+
+![Schéma RAID 16](../../images/os_raid_16.png)
+
+La gestion logicielle des RAID se fait via la commande "mdadm"
+
+![Schéma mdadm](../../images/os_raid_mdadm.png)
+
