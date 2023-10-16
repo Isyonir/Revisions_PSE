@@ -81,7 +81,7 @@ Ce fichier est éditable via la commande visudo.
      |       |      |                            ___________________________________ Commandes (chemins absolus recommandés) une commande commençant par "!" est interdite
      |       |      |                           |
      |       |      |      _____________________|_____________________________
-	   |       |      |     |                                                   | 
+     |       |      |     |                                                   | 
 identifiant	ALL = (user) /chemin/complet/commande,/chemin/complet/autrecommande
 ```
 
