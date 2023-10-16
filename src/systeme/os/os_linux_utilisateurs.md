@@ -58,3 +58,32 @@ Structure du fichier /etc/shadow
  |   |                        |   |   |  |  | | |
 john:$6$iTEFbMTM$CXmxPwErbEef9/:17707:0:90:14:_:_:
 ```
+
+## Le superutilisateur
+
+Sous Linux l'utilisateur dont le UID est 0 est considéré comme étant le superutilisateur.  
+En général cet utilisateur s'appelle root, il possède tous les droits, et peut lire, modifier et supprimer n'importe quel fichier.
+
+Il est déconseillé d'utiliser le compte root pour les activités quotidiennes.
+
+Un utilisateur classique peut exécuter une commande en tant que root via la commande sudo. Pour ça, il doit être présent dans le fichier /etc/sudoers.  
+
+## Le fichier sudoers
+
+Fichier contenant les règles en rapport avec la commande sudo (qui peut faire quoi).  
+Ce fichier est éditable via la commande visudo.
+
+```
+
+      ______________________________________________________________________________ Utilisateur ou groupe (%groupe)
+     |        ______________________________________________________________________ Machines sur lesquelles la règle s'applique
+     |       |       _______________________________________________________________ Utilisateur dont on prend les droits (peut être ALL)
+     |       |      |                            ___________________________________ Commandes (chemins absolus recommandés) une commande commençant par "!" est interdite
+     |       |      |                           |
+     |       |      |      _____________________|_____________________________
+	   |       |      |     |                                                   | 
+identifiant	ALL = (user) /chemin/complet/commande,/chemin/complet/autrecommande
+```
+
+
+
