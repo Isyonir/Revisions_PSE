@@ -215,4 +215,4 @@ UNIQUEMENT SOUS XFS
 - Création de l'ID du projet : echo "projetBlip:1" > /etc/projid
 - Association du projet à un répertoire : echo "1:/home/test" > /etc/projects
 - Ajout du projet dans le système de quotas : xfs_quota -xc 'project -s projetBlip' /home/test
-- Mise en place des limites : xfs_quota -xc 'limit -p bsoft=4g bhard=5g projetBlip' <point de montage>
+- Mise en place des limites : xfs_quota -xc 'limit -p bsoft=4g bhard=5g projetBlip' pointDeMontage
