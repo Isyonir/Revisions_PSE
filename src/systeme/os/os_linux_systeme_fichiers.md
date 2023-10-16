@@ -165,3 +165,54 @@ Attention : **le retrait d'une règle par défaut n'est pas récursif !**
 
 La manipulation des ACL se fait via les commandes setfacl et getfacl (PLus d'infos sur le chapitre des commandes Linux)
 
+### Limitations de l'utilisation
+
+On peut limiter l'utilisation de l'espace disque à l'aide du système de quotas.  
+Cette limitation peut se faire par utilisateur, par groupe ou par projet (xfs seulement).  
+Pour l'utiliser, il faut installer le paquet quota.x86_64.
+
+Deux limites peuvent être données : la soft et la hard.  
+La soft correspond à la limite à partir de laquelle une alerte sera notifiée à l'utilisateur / groupe.
+La hard correspond à le limite maximale que l'utilisateur / groupe peut utiliser.
+
+Il faut également que le disque soit monté avec une option supplémentaire :
+
+- usrquota, grpquota pour ext4
+- quota, gquota, prjquota pour xfs
+
+Ex : 
+```
+- /dev/sda1 /home ext4 defaults,usrquota 1 1 pour Ext4
+- /dev/sda1 /home xfs  rw,quota          0 0 pour XFS
+```
+
+#### Limitation par utilisateur
+
+##### Ext4
+
+- Création de l'index : quotacheck -vgum /home
+- Activation des quotas : quotaon -av
+- Modification du fichier : edquota utilisateur
+
+##### XFS
+xfs_quota -xc 'limit -u bsoft=400m bhard=500m user' /rep1/rep2
+
+#### Limitation par groupe
+
+##### Ext4
+
+- Création de l'index : quotacheck -vgum /home
+- Activation des quotas : quotaon -av
+- Modification du fichier : edquota groupe
+
+##### XFS
+xfs_quota –xc 'limit –g isoft=100 ihard=150 group' /rep1/rep2
+
+#### Limitation par projet (ou répertoire)
+
+UNIQUEMENT SOUS XFS
+
+- Création de l'ID du projet : echo "projetBlip:1" > /etc/projid
+- Association du projet à un répertoire : echo "1:/home/test" > /etc/projects
+- Ajout du projet dans le système de quotas : xfs_quota -xc 'project -s projetBlip' /home/test
+- Mise en place des limites : xfs_quota -xc 'limit -p bsoft=4g bhard=5g projetBlip' <point de montage>
