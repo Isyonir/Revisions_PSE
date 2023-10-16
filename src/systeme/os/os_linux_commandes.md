@@ -496,3 +496,17 @@ Ex:
 ```
 
 ```
+
+## mdadm
+Gestion des RAID
+
+--create : Création d'un groupe RAID
+--grow : modification structurelle d'un groupe RAID
+--manage : modification de la configuration
+--detail : information sur un groupe RAID
+--monitor : surveillance périodique d'un groupe RAID pour envoi d'alerte/mail
+
+Ex: 
+```
+
+```
