@@ -350,6 +350,16 @@ Ex:
 
 ```
 
+## sudo
+Exécution de commande en tant que superutilisateur
+
+-l : Liste des droits présents dans le fichiers sudoers en rapport avec l'utilisateur courant
+
+Ex: 
+```
+
+```
+
 # Gestion des services
 
 ## service
