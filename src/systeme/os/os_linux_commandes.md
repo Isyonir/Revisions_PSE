@@ -206,6 +206,37 @@ Ex:
 ```
 
 ```
+
+### xfs_quota
+Gestion des quotas dans le système de fichiers xfs
+
+Ex:
+```
+
+```
+
+### quotacheck
+Création de l'index des quotas sous ext4
+
+Ex:
+```
+
+```
+### quotaon
+Activation des quotas sous ext4
+
+Ex:
+```
+
+```
+### edquota
+Edition des règles de quotas sous ext4
+
+Ex:
+```
+
+```
+
 ## Gestion des utilisateurs
 
 ### groupadd
