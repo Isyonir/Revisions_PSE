@@ -540,3 +540,109 @@ Ex:
 ```
 
 ```
+
+## pvcreate
+Création d'un volume physique
+
+Ex: 
+```
+
+```
+
+## pvdisplay
+Affichage des infos d'un volume physique
+
+Ex: 
+```
+
+```
+
+## pvremove
+Suppression d'un volume physique
+
+Ex: 
+```
+
+```
+
+## vgcreate
+Création d'un volume group
+
+Ex: 
+```
+
+```
+
+## vgdisplay
+Affichage des informations d'un volume group
+
+Ex: 
+```
+
+```
+
+## vgremove
+Suppression d'un volume group
+
+Ex: 
+```
+
+```
+
+## vgextend
+Ajout d'un volume physique dans le volume group
+
+Ex: 
+```
+
+```
+
+## vgdeduce
+Retrait d'un volume physique dans le volume group
+
+Ex: 
+```
+
+```
+
+## lvcreate
+Création d'un volume logique
+
+Ex: 
+```
+
+```
+
+## lvdisplay
+Affichage des informations d'un volume logique
+
+Ex: 
+```
+
+```
+
+## lvremove
+Suppression d'un volume logique
+
+Ex: 
+```
+
+```
+
+## lvextend
+Ajout d'espace pour un volume logique
+
+Ex: 
+```
+
+```
+
+## lvresize
+Modification de l'espace pour un volume logique
+
+-r : Retirer de l'espace
+
+Ex: 
+```
+
+```
