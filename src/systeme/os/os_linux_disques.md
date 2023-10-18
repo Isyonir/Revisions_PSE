@@ -92,3 +92,21 @@ La gestion logicielle des RAID se fait via la commande "mdadm"
 
 ## Les LVM
 
+Permet une couche d'abstraction entre l'espace physique et le système.  
+On va pour cela créer des partitions virtuelles qui sont plus simples à gerer (ajout, extension, suppression) que des partitions physiques.  
+
+Un LVM est composé de:
+- Volumes physiques qui sont des disques ou partitions physiques
+- Groupes de volumes = disques logiques
+- Volumes logiques = partitions logiques
+
+![Schéma LVM](../../images/os_linux_lvm.png)
+
+Etapes à suivre pour créer un volume logique :
+- Créer un volume physique = pvcreate /dev/vda1
+- Créer un volume group = vgcreate /dev/vda1 /dev/vda2
+- Créer un volume logique = lvcreate -n NOM -L TAILLE NOM_VG
+- Formater le volume logique = mkfs
+- Monter le nouveau système = mount
+
+On peut créer un snapshot d'un volume logique à l'aide de l'option --snapshot de la commande lvcreate
