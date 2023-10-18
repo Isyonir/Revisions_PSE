@@ -27,4 +27,6 @@ OS.
   - Sécurité : L'isolement des applications en tant que conteneurs empêche l'invasion de code malveillant d'affecter d'autres conteneurs ou le système hébergeur.
 
 
+
+
 ![image](https://github.com/Isyonir/Revisions_PSE/assets/143949453/c44712c8-8c5e-4870-ba9a-ebb642a4569f)
