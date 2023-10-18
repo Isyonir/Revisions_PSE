@@ -55,10 +55,31 @@ Lister le contenu d'un répertoire
 
 Ex:
 ```
-
+ls
+bin  boot  dev  etc  home  lib  lib64  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 ```
 Lister tous les fichiers sous forme de liste du plus ancien au plus récent
 ```
+> ls -lrt
+total 36
+drwxr-xr-x   1 root root    0 31 janv.  2023 opt
+drwxr-xr-x   1 root root    0 31 janv.  2023 mnt
+drwxr-xr-x   1 root root   14 26 juil. 11:39 srv
+drwxr-xr-x   1 root root   90 13 sept. 10:28 home
+lrwxrwxrwx   1 root root    7 18 sept. 15:18 sbin -> usr/bin
+lrwxrwxrwx   1 root root    7 18 sept. 15:18 lib64 -> usr/lib
+lrwxrwxrwx   1 root root    7 18 sept. 15:18 lib -> usr/lib
+lrwxrwxrwx   1 root root    7 18 sept. 15:18 bin -> usr/bin
+drwxr-x---   1 root root  112 12 oct.  10:33 root
+drwxr-xr-x   1 root root  128 16 oct.  11:07 boot
+drwxr-xr-x   1 root root   80 17 oct.  10:48 usr
+dr-xr-xr-x 247 root root    0 17 oct.  21:00 proc
+dr-xr-xr-x  13 root root    0 17 oct.  21:00 sys
+drwxr-xr-x   1 root root 2558 17 oct.  21:00 etc
+drwxr-xr-x   1 root root  116 17 oct.  21:00 var
+drwxr-xr-x  20 root root 3680 17 oct.  21:00 dev
+drwxr-xr-x  15 root root  460 17 oct.  21:00 run
+drwxrwxrwt  11 root root  300 18 oct.  00:54 tmp
 
 ```
 
