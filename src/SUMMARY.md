@@ -39,5 +39,8 @@
 	- [Haute disponibilité](./logicel/haute_dispo.md)
 	- [Load balancing](./logiciel/loadbalancing.md)
 	- [Métrologie et supervision](./logiciel/metrologie.md)
+ 	- [Ordonnanceur](./logiciel/ordonnanceur.md)
+  	- [Proxy](./logiciel/proxy.md)
+  	- [Virtualisation & conteneurisation][./virtualisation_conteneurisation.md)  
 	- [Sauvegarde](./logiciel/Sauvegarde.md)
 	- [PXE](./logiciel/pxe.md)
