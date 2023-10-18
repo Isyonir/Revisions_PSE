@@ -565,6 +565,14 @@ Ex:
 
 ```
 
+## pvmove
+Copie de données d'un volume physique à un autre
+
+Ex: 
+```
+pvmode SOURCE DEST
+```
+
 ## vgcreate
 Création d'un volume group
 
