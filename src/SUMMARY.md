@@ -42,5 +42,5 @@
  	- [Ordonnanceur](./logiciel/ordonnanceur.md)
   	- [Proxy](./logiciel/proxy.md)
   	- [Virtualisation & conteneurisation](./virtualisation_conteneurisation.md)  
-	- [Sauvegarde](./logiciel/Sauvegarde.md)
+	- [Sauvegarde](./logiciel/sauvegarde.md)
 	- [PXE](./logiciel/pxe.md)
