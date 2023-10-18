@@ -16,9 +16,9 @@ Affichage de l'emplacement courant
 
 Ex :
 ```
--(ven sep 22 09:18:57)--(z4bpadm3:~/CQH)-
-[g2a] $ pwd
-/home/g2a/CQH
+-(ven sep 22 09:18:57)--(hostname:~/folder)-
+[user] $ pwd
+/home/user/folder
 ```
 
 ### cd
@@ -26,22 +26,22 @@ Déplacement dans l'arborescence
 
 Ex:
 ```
--(ven sep 22 09:20:40)--(z4bpadm3:~)-
-[g2a] $ pwd
-/home/g2a
--(ven sep 22 09:20:43)--(z4bpadm3:~)-
-[g2a] $ cd CQH/
--(ven sep 22 09:20:47)--(z4bpadm3:~/CQH)-
-[g2a] $ pwd
-/home/g2a/CQH
+-(ven sep 22 09:20:40)--(hostname:~)-
+[user] $ pwd
+/home/user
+-(ven sep 22 09:20:43)--(hostname:~)-
+[user] $ cd folder/
+-(ven sep 22 09:20:47)--(hostname:~/folder)-
+[user] $ pwd
+/home/user/folder
 ```
 Retour dans le répertoire personnel
 ```
--(ven sep 22 09:20:49)--(z4bpadm3:~/CQH)-
-[g2a] $ cd
--(ven sep 22 09:20:52)--(z4bpadm3:~)-
-[g2a] $ pwd
-/home/g2a
+-(ven sep 22 09:20:49)--(hostname:~/folder)-
+[user] $ cd
+-(ven sep 22 09:20:52)--(hostname:~)-
+[user] $ pwd
+/home/user
 ```
 
 ### ls
@@ -55,12 +55,14 @@ Lister le contenu d'un répertoire
 
 Ex:
 ```
-ls
+-(ven sep 22 09:20:52)--(hostname:~)-
+[user] $ ls
 bin  boot  dev  etc  home  lib  lib64  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 ```
 Lister tous les fichiers sous forme de liste du plus ancien au plus récent
 ```
-> ls -lrt
+-(ven sep 22 09:20:52)--(hostname:~)-
+[user] $ ls -lrt
 total 36
 drwxr-xr-x   1 root root    0 31 janv.  2023 opt
 drwxr-xr-x   1 root root    0 31 janv.  2023 mnt
