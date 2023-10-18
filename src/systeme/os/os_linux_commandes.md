@@ -105,7 +105,11 @@ Copie de fichiers
 
 Ex:
 ```
+-(ven sep 22 09:20:52)--(hostname:~)-
+[user] $ ls -lrt
 
+-(ven sep 22 09:50:20)--(hostname:~)-
+[user] $ cp -r /dossier/* /dossier_destination/
 ```
 
 ### mv
@@ -113,7 +117,8 @@ Déplacement de fichier (préserve les droits)
 
 Ex:
 ```
-
+-(ven sep 22 10:10:12)--(hostname:~)-
+[user] $ mv /dossier/source  /dossier_destination/
 ```
 
 ### touch
@@ -121,7 +126,8 @@ Modification de l'horodatage, peut être utilisé pour créer un fichier (décon
 
 Ex:
 ```
-
+-(ven sep 22 10:10:12)--(hostname:~)-
+[user] $ touch fichier
 ```
 
 ### mkdir
@@ -131,7 +137,8 @@ Création d'un répertoire
 
 Ex:
 ```
-
+-(ven sep 22 10:15:17)--(hostname:~)-
+[user] $ mkdir /tmp/dossier
 ```
 
 ### stat
