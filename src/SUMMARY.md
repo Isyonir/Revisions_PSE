@@ -45,3 +45,7 @@
   	- [Virtualisation & conteneurisation](./logiciel/virtualisation_conteneurisation.md)  
 	- [Sauvegarde](./logiciel/sauvegarde.md)
 	- [PXE](./logiciel/pxe.md)
+ - [Environnement de travail]()
+ 	- [Droit informatique](./enrivonnement/droit_info.md)
+    	- [Normalisation](./enrivonnement/normalisation.md)
+     	- [Organisation du travail](./enrivonnement/organisation_du_travail.md) 
