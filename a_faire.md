@@ -41,10 +41,10 @@
 - Environnement du système d’information
   - ~~normalisation~~
   - ~~bonnes pratiques (ITIL, COBIT)~~
-  - notions générales sur le droit de l’informatique
+  - ~~notions générales sur le droit de l’informatique~~
   - ~~protection des données individuelles~~
   - l'usage de la messagerie
   - ~~rôle de la CNIL~~
   - protection des logiciels : licences
-  - organisation du travail
+  - ~~organisation du travail~~
   - la sécurité physique des matériels, du réseau, des données (plan de secours, plan de continuité)
