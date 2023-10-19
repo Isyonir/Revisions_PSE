@@ -47,5 +47,5 @@
 	- [PXE](./logiciel/pxe.md)
  - [Environnement de travail](./environnement/sommaire_environnement.md)
 	- [Droit informatique](./enrivonnement/droit_info.md)
-	- [Normalisation](./enrivonnement/normalisation.md)
+   	- [Normalisation](./enrivonnement/normalisation.md)
 	- [Organisation du travail](./enrivonnement/organisation_du_travail.md) 
