@@ -21,7 +21,7 @@
 ## L'accès à la mémoire
 
 L'accès à la mémoire se fait via les bus :
-- le bus système permet au processeur de communiquer avec les différents périphériques
+- le bus de contrôle (système) permet au processeur de communiquer avec les différents périphériques
 - le bus d'adresse est celui dans lequel sera spécifié l'adresse mémoire qui doit être chargée ou écrite
 - le bus de données est celui par lequel les données transitent
 
@@ -75,6 +75,7 @@ Numéro de frame + Offset (déplacement)
 ### Segmentation mémoire
 
 La mémoire physique est divisée en segments de tailles variables. Ces segments en général correspondent à des groupes logiques d'informations (Ex: Les différentes régions mémoire d'un processus "Text", "Data" ...).
+
 A la différence de la pagination, où la taille des frames et des pages est d'une longueur fixe arbitraire, la taille des segments correspondent à la taille réelle des données à stocker à l'intérieur, ce qui permet d'économiser de la mémoire.
 
 Pour avoir l'adresse physique d'une donnée, on a besoin du couple:
