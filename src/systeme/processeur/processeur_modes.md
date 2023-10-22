@@ -12,7 +12,7 @@ Lorsqu'un PC démarre, le processeur est en mode réel.
 
 ## Mode protégé
 Le mode protégé ajoute la notion de niveaux (ou anneaux "rings") de privilèges.  
-Il y en a en tout 4 du plus privilégié au oins privilégié : 0, 1, 2 et 3
+Il y en a en tout 4 du plus privilégié au moins privilégié : 0, 1, 2 et 3
 
 Le passage d'un niveau moins privilégié à un niveau privilégié se fait par l'appel de certaines instructions.
 
