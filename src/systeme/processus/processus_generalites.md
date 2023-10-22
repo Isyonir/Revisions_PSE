@@ -33,5 +33,5 @@ Les processus possèdent ce que l'on appelle des "états".
  
 ![Etats processus](../../images/processus_etats.png)
 
-Un processus zombie est un processus toujours présent en mémoire mais qu ne s'exécute plus.
-L'accumulation de processus zombies peut entraîner une pénurie de RAM, et donc un crash ou un ralentissement du système.
+Un processus zombie est un processus toujours présent en mémoire mais qui ne s'exécute plus.
+L'accumulation de processus zombies peut entraîner une pénurie de RAM et donc un crash ou un ralentissement du système.
