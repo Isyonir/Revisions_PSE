@@ -46,7 +46,7 @@ Les registres AX, BX, CX et DX possèdent une partie haute "H" et basse "L" qui 
 
 
 ### Les registres de segment
-Ces registres sont principalement utilisés pour contenir des adresses de segment.
+Ces registres sont principalement utilisés pour contenir des adresses de segment de la RAM.
 Pour rappel dans le cas d'une mémoire segmentée, une adresse mémoire se compose de deux parties:
 - Le segment
 - L'offset (décalage)
