@@ -21,6 +21,8 @@ C'est à l'OS de mettre en oeuvre les niveaux de privilèges, par exemple, il d�
 Ce système permet d'apporter une certaine sécurité : 
 Un logiciel malveillant tournant au niveau 3 pourrait par exemple ne pas pouvoir faire appel à un driver tournant au niveau 2 pour pouvoir par exemple prendre le contrôle d'une webcam.
 
+Le mode protégé apporte également la possibilité de paginer la mémoire.
+
+
 ![Schéma niveaux privilèges](../../images/processeur_privileges.png)
 
-Le mode protégé apporte également la possibilité de paginer la mémoire.
