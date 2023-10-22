@@ -66,7 +66,7 @@ Ce sont typiquement eux qui sont gérés par l'ordonnanceur (l'ordonnanceur ne g
 
 Les threads d'un même processus partagent le tas (heap), et les instructions, mais ils ont chacun leur pile (stack)
 
-Le context switch ente deux threads d'un même processus est bien plus léger que celui entre deux processus (certaines données sont communes aux threads d'un même processus)
+Le context switch entre deux threads d'un même processus est bien plus léger que celui entre deux processus (certaines données sont communes aux threads d'un même processus)
 
 Comme les threads d'un processus partagent leur mémoire si l'un d'entre eux corrompt celle-ci, le processus en entier peut crasher.
 
