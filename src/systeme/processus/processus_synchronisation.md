@@ -14,7 +14,7 @@ La synchronistion doit gérer les problématiques suivantes:
 - L'interbloquage (deadlock): Plusieurs processus attendent à l'infini que le processus qui utilise la ressource la libère, entraînant un arrêt du programme.
 - La famine (starvation): Un processus n'arrive pas à avoir accès à la ressource dont il a besoin (la ressource se fait tout le temps bloquer par un nouveau processus)
 - L'inversion de priorité: Un processus A de basse priorité est en cours d'exécution, et acquiert la ressource. L'ordonnanceur passe la main à un processus de haute priorité B qui veut la même ressource.  Ce dernier ne peut pas l'acquérir, car A la possède déjà, mais A ne sera pas appelé par le scheduler, car il est de priorité plus basse que B. B est donc bloqué.
-- L'attente active (busy waiting): Un processus retente fréqument d'acquérir la ressource tant que celle-ci est déjà acquise, ce qui consomme du temps processeur, et donc ce qui relentit le système.
+- L'attente active (busy waiting): Un processus retente fréquement d'acquérir la ressource tant que celle-ci est déjà acquise, ce qui consomme du temps processeur, et donc ce qui relentit le système.
 
  Les principales implémentations de synchronisation:
 
@@ -29,10 +29,10 @@ La synchronistion doit gérer les problématiques suivantes:
 
 Un autre challenge que la synchronisation doit aider à surmonter est la situation de compétition (race condition).
 Dans le cas où plusieurs threads d'un même processus s'exécutent en parallèle, l'ordre de complétion des threads n'est pas défini à l'avance.
-Cela peut conduire à un comportement erroné du programme (Le thread B s'exécute avant le thread A alors qu'il avait besoin de lui pour faire quelquechose vant son exécution)
+Cela peut conduire à un comportement erroné du programme (Le thread B s'exécute avant le thread A alors qu'il avait besoin de lui pour faire quelque chose avant son exécution)
 
 Une des manières pour remédier aux race condition sont les barrières:
 
 Une barrière est définie pour un groupe de threads. Chaque thread de ce groupe doit attendre à la barrière le temps que les autres threads du groupe y soient aussi avant de pouvoir continuer.
-Il peut y avaoir plusieurs barrières les unes à la suite des autres.
+Il peut y avoir plusieurs barrières les unes à la suite des autres.
 L'inconvénient majeur est le ralentissement de l'exécution du programme, à chaque fois les threads doivent s'attendre entre eux avant de pouvoir continuer leur exécution.
