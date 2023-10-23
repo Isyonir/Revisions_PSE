@@ -91,5 +91,25 @@ Le programme est découpé en segments. Chaque segment contient une table de pag
 
 ![Image pagination segmentee](../../images/pagination_segmentee.png)
 
+### Big et Little Endian
+
+Le concept d'endianness désigne l'organisation en mémoire d'une information sur plusieurs octets:
+- Pour le big endian : l'octet de poids **fort** est situé à l'**adresse mémoire la plus petite**
+- Pour le little endian : l'octet de poids **faible** est situé à l'**adresse mémoire la plus petite**
+
+Ex :
+```
+Pour une donnée de 4 octets dont la valeur est : 0x0A0B0C0D
+                                                   |     |
+                                                   |     |
+                      Octet de poids fort ---------+     |
+                    Octet de poids faible ---------------+
+
+| Adresse en mémoire | 0x01 | 0x02 | 0x03 | 0x04 |
+|--------------------|------|------|------|------|
+| Little endian      | 0D   | 0C   | 0B   | 0A   |
+| Big endian         | 0A   | 0B   | 0C   | 0D   |
+```
+Dans les architectures modernes (x86-64) les données sont stockées sous le format de little-endian.
 
 
