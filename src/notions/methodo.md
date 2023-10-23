@@ -43,7 +43,7 @@ La note de proposition ne doit pas dépasser deux pages. Il s'agit d'un document
 ## La méthodologie de la note de synthèse 
 
 Les étapes pour construire et rédiger une note de synthèse sont les suivantes :
-  - Lecture et analyse du suje
+  - Lecture et analyse du sujet
   - Lecture du sommaire et survol du fonds documentaire
   - Lecture et analyse des documents
   - Rédaction du plan détaillé
@@ -56,7 +56,7 @@ L'épreuve dure 4 heures, 2h45 pour la note de synthèse et 1h15 pour la note de
 | Temps      | Étapes                                       | Objectifs                                                                |
 |------------|----------------------------------------------|--------------------------------------------------------------------------|
 | 5 minutes  | Lecture du libellé du sujet                  | Lecture du libellé du sujet                                              |
-| 50 minutes | Lecture du sommaire et du fonds documentaire | Déterminer la problématique et le plan qui en découle  Prendre des notes |
+| 50 minutes | Lecture du sommaire et du fonds documentaire | Déterminer la problématique et le plan qui en découle, Prendre des notes |
 | 45 minutes | Plan détaillé                                | Lecture du libellé du sujet phrases déjà rédigées                        |
 | 15 minutes | Introduction                                 | À rédiger intégralement au brouillon                                     |
 | 45 minutes | Rédaction                                    |                                                                          |
