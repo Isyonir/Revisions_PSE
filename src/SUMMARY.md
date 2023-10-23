@@ -2,7 +2,6 @@
 - [Système](./systeme/systeme.md)
   	- [Processeur](./systeme/processeur/processeur.md)
   		- [Les registres](./systeme/processeur/processeur_generalites.md)
-  	  	- [Assembleur](./systeme/processeur/processeur_assembleur.md)
   	  	- [Modes](./systeme/processeur/processeur_modes.md)
   	- [Mémoire](./systeme/memoire/memoire.md)
   	- [Processus](./systeme/processus/processus.md)
