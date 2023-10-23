@@ -8,7 +8,7 @@ GRUB permer également de modifier les paramètres de démarrage.
 
 Une fois l'OS sélectionné, son noyau (sous forme compressé) est chargé.
 
-Un petit programme est chargé de le décompresser dans la RAM, il démarre ensuite son gestionnaire de mémoire (pagination), détecte le type de CPU, puis démarre la noyau via la fonction start_kernel().
+Un petit programme est chargé de le décompresser dans la RAM, il démarre ensuite son gestionnaire de mémoire (pagination), détecte le type de CPU, puis démarre le noyau via la fonction start_kernel().
 Le noyau va alors initialiser un certain nombre de choses, parmi lesquelles le démarrage du processus "Init", et le montage de la partition /root dans la RAM.
 A ce stade, tout est encore chargé en RAM dans ce qu'on appelle un "Initial RAM Disk" ("initrd" ou "initramfs"), c'est une zone de la RAM que l'OS utilise comme une zone du disque dur.
 
