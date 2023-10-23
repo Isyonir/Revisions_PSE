@@ -1,6 +1,6 @@
 # Méthodologie pour l'écrit 
 
-## La note de synthèse 
+## Le but de la note de synthèse 
 
 La note de synthèse permet de d'appréhender les qualités rédactionnelles du candidat et apprécier sa capacité à :
   - organiser des idées et des connaissances sur des sujets d’ordre économique et financier
@@ -23,7 +23,7 @@ La note de synthèse n’est pas :
   - une note professionnelle destinée à un supérieur hiérarchique.
 
 
-### Le formalisme de la note de synthèse 
+## Le formalisme de la note de synthèse 
 
 Une note de synthèse doit avoir : 
   - Une introduction ogligatoire : elle doit être en trois parties distinctes, une accroche qui pose le thème du sujet, définit les termes, le contexte ... , une problématique dégagée et l'annonce du plan.
@@ -32,7 +32,7 @@ Une note de synthèse doit avoir :
   - La conclusionb est à éviter !!
 
 
-### Le formalisme de la note de proposition (ou conclusion)
+## Le formalisme de la note de proposition (ou conclusion)
 - Une introduction (accroche, problématique, plan)
 - Plan en deux parties, l'utilisation de sous parties n'est pas obligatoire.
 - La conclusion est obligatoire pour clore le raisonnement et potentiellement ouvrir vers un autre sujet en lien avec celui qui a été traité.
@@ -40,7 +40,8 @@ Une note de synthèse doit avoir :
 La note de proposition ne doit pas dépasser deux pages. Il s'agit d'un document concis. 
 
 
-## 
+## La méthodologie de la note de synthèse 
+
 Les étapes pour construire et rédiger une note de synthèse sont les suivantes :
   - Lecture et analyse du suje
   - Lecture du sommaire et survol du fonds documentaire
@@ -49,3 +50,14 @@ Les étapes pour construire et rédiger une note de synthèse sont les suivantes
   - Rédaction de l’introduction
   - Rédaction du devoir
   - Relecture
+
+L'épreuve dure 4 heures, 2h45 pour la note de synthèse et 1h15 pour la note de proposition
+
+| Temps      | Étapes                                       | Objectifs                                                                |
+|------------|----------------------------------------------|--------------------------------------------------------------------------|
+| 5 minutes  | Lecture du libellé du sujet                  | Lecture du libellé du sujet                                              |
+| 50 minutes | Lecture du sommaire et du fonds documentaire | Déterminer la problématique et le plan qui en découle  Prendre des notes |
+| 45 minutes | Plan détaillé                                | Lecture du libellé du sujet phrases déjà rédigées                        |
+| 15 minutes | Introduction                                 | À rédiger intégralement au brouillon                                     |
+| 45 minutes | Rédaction                                    |                                                                          |
+| 5 minutes  | Rédaction                                    | Contrôle de l’orthographe et de la syntaxe                               |
