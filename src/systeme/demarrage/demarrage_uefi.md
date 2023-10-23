@@ -2,12 +2,17 @@
 
 ## Démarrage par un UEFI
 
-- SEC (Security Phase): Initialisation d'une mémoire temporaire (on utilise le cache CPU comme étant de la RAM)
+Comme pour le BIOS, une fois démarré, le CPU va jump vers la première instruction présente sur la puce UEFI, qui va dérouler
+les phases suivantes :
+
+- SEC (Security Phase): Initialisation et vérification du matériel (CPU, chipsets et Carte mère)
 - PEI (Pre-EFI Initialisation): Découverte et initialisation du hardware, et notemment de la RAM
 - DXE (Driver Execution Environment): Lancement de divers modules, dont le BDS
- - BDS (Boot Device Select): Initialisation des périphériques bootables
+- BDS (Boot Device Select): Initialisation des périphériques bootables
 - TSL (Transient System Load): Stage intermédiaire avant la prise en main par l'OS, c'est à la fin de ce stage que le bootloader de l'OS est exécuté
 - RT (Runtime): L'UEFI donne la main à l'OS, mais ce dernier peut continuer à utiliser ses fonctionnalités (l'UEFI définit certaines fonctions que l'OS peut utiliser)
+
+![Image Boot UEFI](../../images/demarrage_uefi.png)
 
 Contrairement au BIOS, l'UEFI ne se base pas sur les secteurs de boot pour le démarrage de l'OS.
 Un boot manager intégré fait la liste des boot loaders trouvés sur les disques.
