@@ -6,8 +6,8 @@ En informatique la simulation passe par un logiciel qui calcule et prédit donc 
 un réseau et les echanges entre les différents périphériques réseau comme les routeurs, switchs, hubs et terminaux. 
 
 ## L'émulation : 
-L'émulation n'a pas pour but de simuler mais de reproduire à l'identique le comportament d'un logiciel et de son architecture matériel.
-Un exemple simple est l'émulation de console de jeu sur un ordinateur ou le comportement de la console et du jeu est reproduit sur l'ordinateur.
+L'émulation n'a pas pour but de simuler mais de reproduire à l'identique , de façon logicielle, le comportement d'un logiciel et de son architecture matériel.
+Un exemple simple est l'émulation de console de jeu sur un ordinateur où le comportement de la console et du jeu est reproduit sur l'ordinateur.
 
 En informatique on peut retrouver des émulateurs réseaux comme GNS3 qui permet d'émuler le fonctionnement de plusieurs périphériques comme les switchs, firewalls...
 
