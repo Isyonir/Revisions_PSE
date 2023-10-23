@@ -35,9 +35,9 @@ Le pilotage du périphérique via le contrôleur peut se faire de deux manières
 
 Le système d'exploitation s'occupe de créer, d'interrompre et de supprimer les processus.  
 Pour ça il doit : 
-- Réservier la mémoire
+- Réserver la mémoire
 - Planifier l'exécution (ordonnancement)
-- S'occuper des interblocages (il gère l'octroi des ressources suivant les disponibilités de cs dernières)
+- S'occuper des interblocages (il gère l'octroi des ressources suivant les disponibilités de ces dernières)
 - Assurer les communications entre les processus
 
 ### Gestion de la mémoire
