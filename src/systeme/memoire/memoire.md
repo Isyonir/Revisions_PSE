@@ -76,20 +76,25 @@ Numéro de frame + Offset (déplacement)
 
 La mémoire physique est divisée en segments de tailles variables. Ces segments en général correspondent à des groupes logiques d'informations (Ex: Les différentes régions mémoire d'un processus "Text", "Data" ...).
 
-A la différence de la pagination, où la taille des frames et des pages est d'une longueur fixe arbitraire, la taille des segments correspondent à la taille réelle des données à stocker à l'intérieur, ce qui permet d'économiser de la mémoire.
+**A la différence de la pagination**, où la taille des frames et des pages est d'une longueur fixe arbitraire, **la taille des segments correspondent à la taille réelle des données à stocker** à l'intérieur, ce qui permet d'économiser de la mémoire.
 
 Pour avoir l'adresse physique d'une donnée, on a besoin du couple:
 Numéro de segment + Offset (déplacement)
 
 ![Image segmentation](../../images/processus_memoire.png)
 
-En pratique, les techniques de pagination et de segmentation sont utilisées de façon conjointe.
+### Différences entre pagination et segmentation
 
-### La Pagination segmentée
+| Pagination                                            | Segmentation                                                                |
+|-------------------------------------------------------|-----------------------------------------------------------------------------|
+| La taille des pages est fixe                          | La taille des segments dépend de celle des données à stocker                |
+| Géré par l'OS                                         | Géré par le compilateur                                                     |
+| Plus rapide                                           | Plus lent                                                                   |
+| Les pages doivent avoir la même taille que les frames | Pas de contraintes                                                          |
+| On perd un peu d'espace en RAM                        | Pas de perte d'espace : la taille des segments dépend des données à stocker |
+|                                                       |                                                                             |
 
-Le programme est découpé en segments. Chaque segment contient une table de pages, et chaque page dans ces tables contient l'adresse d'une frame.
-
-![Image pagination segmentee](../../images/pagination_segmentee.png)
+Linux utilise la pagination pour gérer la mémoire.
 
 ### Big et Little Endian
 
