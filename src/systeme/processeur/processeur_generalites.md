@@ -24,45 +24,15 @@ Leur nom dépend de leur taille:
 - Préfixe "E" => 32 bits
 - Pas de préfixe => 16 bits
 
-Voici une liste des registres principaux, ceux à retenir sont en **gras**
-
-| 64 bits | 32 bits | 16 bits | Description                                                                                                              |
-|---------|---------|---------|--------------------------------------------------------------------------------------------------------------------------|
-| **RAX**     | EAX     | AX      | Accumulateur (En pratique utilisé pour tout)                                                                             |
-| **RBX**    | EBX     | BX      | Base (En pratique utilisé pour tout)                                                                                     |
-| **RCX**     | ECX     | CX      | Compteur (En pratique utilisé pour tout)                                                                                 |
-| **RDX**     | EDX     | DX      | Data (En pratique utilisé pour tout)                                                                                     |
-| RSI     | ESI     | SI      | Source Index (Utilisé pour la copie de données, correspond à l'adresse des données entrantes)                            |
-| RDI     | EDI     | DI      | Destination Index (Utilisé pour la copie de données, correspond à l'adresse où l'on veut que les données soient copiées) |
-| **RSP**     | ESP     | SP      | Stack Pointer (Correspond à l'adresse mémoire du sommet de la pile)                                                      |
-| RBP     | EBP     | BP      | Stack Base Pointer (Correspond à l'adresse mémoire de la base de la pile)                                                |
-| R8      | R8D     | R8W     | Registres utilisés pour tout                                                                                             |
-| ...     |         |         |                                                                                                                          |
-| R15     | R15D    | R15W    | Registres utilisés pour tout                                                                                             |
-
-Les registres AX, BX, CX et DX possèdent une partie haute "H" et basse "L" qui le découpe en deux.
-
 ![Organisation rgistres](../../images/processeur_registres.png)
-
 
 ### Les registres de segment
 Ces registres sont principalement utilisés pour contenir des adresses de segment de la RAM.
 Pour rappel dans le cas d'une mémoire segmentée, une adresse mémoire se compose de deux parties:
 - Le segment
 - L'offset (décalage)
-Ainsi, pour avoir l'adresse mémoire du sommet du stack, il faut combiner le SS et le SP, ce qui donne : SS:SP
-(Plus d'infos sur la gestion de la mémoire dans le chapitre dédié)
-
-|Nom | Nom complet   | Description                                                                                                        |
-|----|---------------|--------------------------------------------------------------------------------------------------------------------|
-| CS | Code Segment  | Utilisé pour se référer à des segments dans la partie mémoire "Text" du processus (le code du programme en mémoire |
-| DS | Data Segment  | Utilisé pour se référer à des segments dans la partie mémoire "Data", "Heap", ou "BSS" du processus                |
-| ES | Extra segment | Peut être utilisé pour se référer au segment de n'importe quelle donnée                                            |
-| SS | Stack Segment | Utilisé pour se référer aux segments dans la partie mémoire "Stack" du processus                                   |
-| FS et GS | /       | Utilisés pour se référer au segment de n'importe quelle donnée                                                     |
 
 ### Le registre d'instruction
-
 Appelé RIP, EIP ou IP (Instruction pointer), ce registre garde en mémoire l'adresse mémoire de la prochaine instruction à être exécutée.
 
 ### Les flags
