@@ -50,3 +50,5 @@
 	- [Droit informatique](./environnement/droit_info.md)
    	- [Normalisation](./environnement/normalisation.md)
 	- [Organisation du travail](./environnement/organisation_du_travail.md) 
+ - [Notions générales](./notions/sommaire_notions.md)
+ 	- [Simulation, émulation et virtualisation](./notions/simu_emu_virtu.md) 
