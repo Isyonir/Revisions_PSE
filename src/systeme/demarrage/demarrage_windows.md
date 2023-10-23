@@ -1,6 +1,6 @@
 # Démarrage Windows
 
-Ici est décrit le processus de démarrage pour Windows verion Vista et au delà en démarrage à froid (Donc, pas en veille ni hybernation)
+Ici est décrit le processus de démarrage pour Windows version Vista et au delà en démarrage à froid (Donc, pas en veille ni hybernation)
 
 Dans le cas d'un système démarrant par UEFI, ce dernier va charger l'image efi "bootmgfw.efi" qui contient le Windows Boot manager.
 Une fois exécuté, ce dernier va tout d'abord chercher un OS qu'il peut démarrer, cette recherche se fait en deux temps:
@@ -25,7 +25,7 @@ Une fois les drivers chargés, le noyau démarre le Session Manager Subsystem ("
 - Démarrer les sous-systèmes windows en mode kernel et utilisateur (le sous-système est ce qui permet aux applications de faire appel à des fonctions de l'OS telles que celles de l'API Windows)
 
 Une fois cela fait, il va lancer le gestionnaire d'identification "winlogon.exe" qui va :
-- Lancer le système de services "Servics.exe"
+- Lancer le système de services "Services.exe"
 - Lancer le processus de sécurité local "Lsass.exe" (Permet de s'authentifier)
 - Initialiser, et mettre en oeuvre les Group Policy
 - Lancer les programmes au démarrage.
@@ -33,7 +33,7 @@ Une fois cela fait, il va lancer le gestionnaire d'identification "winlogon.exe"
 Il attend ensuite une connexion d'un utilisateur. Ce dernier se connecte à l'aide de son identifiant + mot de passse.
 Une fois cela fait, il lance "userinit.exe"
 
-Ce programme est le premier à tourner avec les droits de l'utilisateur connecté, il charge le profil utilisateur, les programmes au démarrage sont alncés, puis démarre l'environnement "explorer.exe"
+Ce programme est le premier à tourner avec les droits de l'utilisateur connecté, il charge le profil utilisateur, les programmes au démarrage sont lancés, puis démarre l'environnement "explorer.exe"
 Après ça, l'utilisateur est libre d'utiliseson système.
 
 ## Schéma simplifié
