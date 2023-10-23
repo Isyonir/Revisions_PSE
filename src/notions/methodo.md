@@ -57,7 +57,7 @@ L'épreuve dure 4 heures, 2h45 pour la note de synthèse et 1h15 pour la note de
 |------------|----------------------------------------------|--------------------------------------------------------------------------|
 | 5 minutes  | Lecture du libellé du sujet                  | Lecture du libellé du sujet                                              |
 | 50 minutes | Lecture du sommaire et du fonds documentaire | Déterminer la problématique et le plan qui en découle, Prendre des notes |
-| 45 minutes | Plan détaillé                                | Lecture du libellé du sujet phrases déjà rédigées                        |
+| 45 minutes | Plan détaillé                                | Lecture du libellé du sujet, Phrases déjà rédigées                       |
 | 15 minutes | Introduction                                 | À rédiger intégralement au brouillon                                     |
 | 45 minutes | Rédaction                                    |                                                                          |
 | 5 minutes  | Rédaction                                    | Contrôle de l’orthographe et de la syntaxe                               |
