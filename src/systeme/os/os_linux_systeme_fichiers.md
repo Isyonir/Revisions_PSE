@@ -62,16 +62,16 @@ Le contenu du fichier est supprimé que lorsque tous les liens physiques qui poi
 
 Lorsqu'on liste les fichiers avec ls -l, on peut voir plusieurs informations:
 ```
--rw-r--r--  1 g2a users  2109 jun 19 09:12 snatLog.tar.gz
+-rw-r--r--  1 blip users  2109 jun 19 09:12 blap.tar.gz
 ```
 
 - ``-rw-r--r--`` : Le type de fichier + droits de chaque entitée
 - ``1`` : Nombre de liens physiques du fichier
-- ``g2a``: Propriétaire du fichier
+- ``blip``: Propriétaire du fichier
 - ``users``: Groupe du fichier
 - ``2109``: Taille du fichier en octets
 - ``jun 19 09:12``: horodatage de la dernière modification du fichier
-- ``snatLog.tar.gz``: Nom du fichier
+- ``blap.tar.gz``: Nom du fichier
 
 #### Les permissions de base des fichiers
 
@@ -79,10 +79,12 @@ La première lettre correspond au type de fichier
 Fichiers classiques:
 - "-": Fichier ordinaire
 - "d": réperotire
-- "l": Lien symbolique  
+- "l": Lien symbolique
+
 Fichiers spéciaux liés au fonctionnement d'un driver
 - "c": Caractère (Lecture caractère par caractère) (Ex: Driver de lecture du clavier, la lecture se fait caractère par caractère)
-- "b": Block (Lecture block par block (morceaux par morceaux)) (Ex: Lecture d'un fichier sur un disque dur)  
+- "b": Block (Lecture block par block (morceaux par morceaux)) (Ex: Lecture d'un fichier sur un disque dur)
+
 Fichiers spéciaux liés aux communications entre les processus
 - "p": Tube nommé
 - "s": Socket
@@ -144,9 +146,9 @@ Sur un répertoire, les objets contenus à l'intérieur ne peuvent être supprim
 #### Les ACL (Access Control List)
 
 Ce sont des droits qui sont positionnés sur un objet (**droits discrétionnaires**)  
-En plus des droits pour le paropriétaire et le groupe, on peut ajouter des droits ciblés pour un utilisateur ou un groupe en plus : La **granularité** est donc augmentée.  
+En plus des droits pour le propriétaire et le groupe, on peut ajouter des droits ciblés pour un utilisateur ou un groupe en plus : La **granularité** est donc augmentée.  
 
-Seuls petits bémols : Le paquet doit être insallé en plus (il n'est pas fourni de base avec les distributions Linuxà, et le système de fichiers doit être compatible.
+Seuls petits bémols : Le paquet doit être installé en plus (il n'est pas fourni de base avec les distributions Linux), et le système de fichiers doit être compatible.
 
 Les ACL sont découpées en deux parties :
 - Les permissions conventionnelles (propriétaire ACL_USER_OBJ, groupe ACL_GROUP_OBJ, autres ACL_OTHER)
@@ -163,7 +165,7 @@ Il s'agit par défaut de la valeur la plus permissive hors propriétaire.
 L'héritage des ACL dans un répertoire ne se fait que si il y a présence d'entrées par défaut : DEFAULT_ACL_USER et DEFAULT_ACL_GROUP.
 Attention : **le retrait d'une règle par défaut n'est pas récursif !**
 
-La manipulation des ACL se fait via les commandes setfacl et getfacl (PLus d'infos sur le chapitre des commandes Linux)
+La manipulation des ACL se fait via les commandes setfacl et getfacl (Plus d'infos sur le chapitre des commandes Linux)
 
 ### Limitations de l'utilisation
 
@@ -172,8 +174,8 @@ Cette limitation peut se faire par utilisateur, par groupe ou par projet (xfs se
 Pour l'utiliser, il faut installer le paquet quota.x86_64.
 
 Deux limites peuvent être données : la soft et la hard.  
-La soft correspond à la limite à partir de laquelle une alerte sera notifiée à l'utilisateur / groupe.
-La hard correspond à le limite maximale que l'utilisateur / groupe peut utiliser.
+La soft correspond à la limite à partir de laquelle une alerte sera notifiée à l'utilisateur / groupe.  
+La hard correspond à la limite maximale que l'utilisateur / groupe peut utiliser.
 
 Il faut également que le disque soit monté avec une option supplémentaire :
 
