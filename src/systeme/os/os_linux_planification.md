@@ -30,7 +30,7 @@ L'ID s'obtient en listant les tâches.
 
 Pour planifier des tâches, on utilise l'utilitaire crond.  
 Les tâches planifiées sont placées dans le dossier /etc/cron.d/ pour les tâches système et /var/spool/cron pour les tâches créés par la commande crontab.
-Les fichiers crontab doivent être des fichiers clssiques, et ne doivent pas être exécutables ou en écriture sauf pour le propriétaire.
+Les fichiers crontab doivent être des fichiers classiques, et ne doivent pas être exécutables ou en écriture sauf pour le propriétaire.
 
 L'ajout de tâches se fait via la commande "crontab -e".  
 On peut spécifier les utilisateurs qui ont le droit ou non de créer des tâches planifiées via la présence de deux fichiers "/etc/cron.deny" et "/etc/cron.allow".  
