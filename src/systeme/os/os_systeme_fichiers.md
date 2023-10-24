@@ -7,7 +7,7 @@ Il ne faut pas confondre:
 Un système de fichiers est une façon de stocker des informations et de les organiser dans des fichiers sur une mémoire secondaire (disque dur, SSD, clé USB).  
 
 Il assure un certain nombre de rôles:
-- Le système de fichiers met à disposition de l'OS une API qui permet d'exécuter différentes actins telles que : L'ouverture d'un fichier, la lecture, l'écriture, la suppression, ...
+- Le système de fichiers met à disposition de l'OS une API qui permet d'exécuter différentes actions telles que : L'ouverture d'un fichier, la lecture, l'écriture, la suppression, ...
 - Gestion de l'espace : les fichiers étant de taille différente et cette taille pouvant être dynamique, il alloue à chaque fichier un nombre variable de granules de mémoire secondaire de taille fixe (blocs).
 - Localisation des fichiers : Pour cela chaque fichier possède un nombre d'informations descriptives (nom, adresse, ...)
 - Contrôle de l'accès aux fichiers : Il peut permettre de mettre en place des règles qui permettent de restreindre l'accès, la modification, etc à certains utilisateurs ou groupes
@@ -15,14 +15,14 @@ Il assure un certain nombre de rôles:
 
 ## Structure interne d'un système de gestion de fichiers
 
-On prend ici pour exemple un système de fichiers fonctionnant sour Linux
+On prend ici pour exemple un système de fichiers fonctionnant sous Linux
 
 ### Superbloc
 
 Il contient:
 - le nom du système de fichiers
 - La taille des blocs de données
-- Le nombre, et la liste des blocs libres
+- Le nombre, et la liste des adresses des blocs libres
 - Le nombre et la table des inodes
 
 ### Table des inodes
