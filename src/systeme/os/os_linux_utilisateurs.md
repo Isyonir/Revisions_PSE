@@ -4,7 +4,7 @@
 
 La configuration des utilisateurs est basée sur 3 fichiers :
 - /etc/passwd : Liste des utilisateurs
-- /etc/group : Miste des groupes d'utilisateurs
+- /etc/group : Liste des groupes d'utilisateurs
 - /etc/shadow : Informations sur les mots de passe
 
 Seul root peut modifier ces fichiers
@@ -25,7 +25,7 @@ Structure du fichier /etc/passwd :
   |  |   |   .------------------------------------- GID du groupe primaire
   |  |   |   |      .------------------------------ Commentaire
   |  |   |   |      |          .------------------- Répertoire de connexion
-  |  |   |   |      |          |          .-------- Chemin de l'interpréteur bash utilisé
+  |  |   |   |      |          |          .-------- Chemin du shell utilisé
   |  |   |   |      |          |          |
   |  |   |   |      |          |          |
 karl:x:1242:700:sauvegarde:/home/karl:/bin/bash
