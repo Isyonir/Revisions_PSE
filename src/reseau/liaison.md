@@ -39,7 +39,7 @@ Champs de l'entête
 
 ## Les commutateurs
 Les commutateurs permettent d'interconnecter des équipements dans un même réseau. 
-Il se charge de faire corrspondre l'adresse MAC de destination à un de ses ports.
+Il se charge de faire correspondre l'adresse MAC de destination à un de ses ports.
 
 ## Domaine de diffusion
 Domaine de diffusion : Espace logique d'un réseau informatique où n'importe quel ordinateur peut directement communiquer avec tous les autres du même domaine, sans devoir passer par un routeur.
