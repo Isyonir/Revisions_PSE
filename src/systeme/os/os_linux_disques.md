@@ -8,7 +8,7 @@ Représentation:
 - Disques : /dev/hda ou /dev/sda
 - Partitions : /dev/sda1, /dev/sda2
 
-La partitionnement : Création de régions sur la mémoire secondaire, c'est la première chose que l'on fait avant le formatage.  
+Le partitionnement : Création de régions sur la mémoire secondaire, c'est la première chose que l'on fait avant le formatage.  
 Chaque partition est considérée comme étant un disque logique par l'OS.
 
 On utilise la commande parted pour gérer le partitionnement
@@ -42,8 +42,8 @@ Pour les pérénniser, on doit modifier le fichier /etc/fstab:
 Redundant Array of Independent Disks : répartition des données sur plusieurs disques
 
 Plusieurs types de RAID possibles : 
-- Matériel : Un composant physique est affecté à la gestion des opérations, ce qui permet un allègement de la charge système
-- Pseudo-matériel : C'est le contrôleur intégré au disque qui se charge des opérations, moins char qu'un RAID matériel, mais également un peu moins efficace en terme de performances (le contrôleur du disque doit alors s'occuper de l'accès + de la gestion du RAID)
+- Matériel : Un composant physique est affecté à la gestion des opérations, ce qui permet un allègement de la charge du processeur, de plus il est plus rapide pour reconstruire le RAID que les autres types
+- Pseudo-matériel : C'est le contrôleur intégré au disque qui se charge des opérations, moins cher qu'un RAID matériel, mais également un peu moins efficace en terme de performances (le contrôleur du disque doit alors s'occuper de l'accès + de la gestion du RAID)
 - Logiciel : Le système d'exploitation se charge de la mise en place du RAID, c'est la méthode la moins onéreuse, cependant elle consomme un certain nombre de ressources du système
 
 Il existe également plusieurs modes de RAID
