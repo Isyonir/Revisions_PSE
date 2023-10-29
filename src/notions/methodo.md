@@ -64,3 +64,8 @@ L'épreuve dure 4 heures, 2h45 pour la note de synthèse et 1h15 pour la note de
 
 ![image](https://github.com/Isyonir/Revisions_PSE/assets/140734577/f9386dad-9064-4ce0-8731-ca468ae9ee7b)
 
+![image](https://github.com/Isyonir/Revisions_PSE/assets/140734577/6d39c813-565b-4c0d-9dba-be3698d1ad96)
+
+![image](https://github.com/Isyonir/Revisions_PSE/assets/140734577/9c8a5c5c-7556-40c3-9733-67496f5b2ace)
+
+
