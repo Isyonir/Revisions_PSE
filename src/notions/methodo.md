@@ -61,3 +61,6 @@ L'épreuve dure 4 heures, 2h45 pour la note de synthèse et 1h15 pour la note de
 | 15 minutes | Introduction                                 | À rédiger intégralement au brouillon                                     |
 | 45 minutes | Rédaction                                    |                                                                          |
 | 5 minutes  | Rédaction                                    | Contrôle de l’orthographe et de la syntaxe                               |
+
+![image](https://github.com/Isyonir/Revisions_PSE/assets/140734577/f9386dad-9064-4ce0-8731-ca468ae9ee7b)
+
