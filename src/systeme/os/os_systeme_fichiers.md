@@ -15,7 +15,7 @@ Il assure un certain nombre de rôles:
 
 ## Structure interne d'un système de gestion de fichiers
 
-On prend ici pour exemple un système de fichiers fonctionnant sous Linux
+On prend ici pour exemple un système de fichiers ext4
 
 ### Superbloc
 
